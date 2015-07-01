@@ -14911,7 +14911,7 @@
 				<name>Formation complète</name>
 				<cost>0</cost>
 				<level>1</level>
-				<desc>: +1 à tous les jets d'Investigation/Chasse</desc>
+				<desc>: +1 à tous les jets d'Investigation/Chasse.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
@@ -15575,7 +15575,7 @@
 				<name>Bavure</name>
 				<cost>1</cost>
 				<level>5</level>
-				<desc>Si réussi 2 fois une défense contre un adversaire au corps-à-corps pendant une lutte, peut utiliser sa victime pour qu'elle encaisse l'attaque.(la victime a alors le droit à un jet de lutte opposés).</desc>
+				<desc>Si réussi 2 fois une défense contre un adversaire au corps-à-corps pendant une lutte, peut utiliser sa victime pour qu'elle encaisse l'attaque(la victime a alors le droit à un jet de lutte opposés).</desc>
 				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
@@ -15831,7 +15831,7 @@
 				<name>Connaissances</name>
 				<cost>0</cost>
 				<level>1</level>
-				<desc>: permet de substituer Survie à des jets de Connaissances(géologie, Chasse, écologie)</desc>
+				<desc>: permet de substituer Survie à des jets de Connaissances (géologie, Chasse, écologie)</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
@@ -15885,7 +15885,7 @@
 				<name>Randonneur</name>
 				<cost>0</cost>
 				<level>3</level>
-				<desc>: N'est pas affecté par les malus dus au terrains accidentés.</desc>
+				<desc>: N'est pas affecté par les malus dus aux terrains accidentés.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
@@ -15921,7 +15921,7 @@
 				<name>Survie corporelle</name>
 				<cost>0</cost>
 				<level>3</level>
-				<desc>: Stabilise automatiquement, résiste mieux au froid à la faim et à la chaleur.</desc>
+				<desc>: Stabilise automatiquement, résiste mieux au froid, à la faim et à la chaleur.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
@@ -15993,7 +15993,7 @@
 				<name>Traquenard</name>
 				<cost>0</cost>
 				<level>7</level>
-				<desc>: Malus de 4 pour repérer les pièges et de 2 pour être repérer en embuscade.</desc>
+				<desc>: Malus de 4 pour repérer les pièges et de 2 pour être repéré en embuscade.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
