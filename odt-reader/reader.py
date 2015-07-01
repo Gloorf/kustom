@@ -103,9 +103,9 @@ for table in tables:
             #Due to the multiple number of table in magic, i do it cell by cell, doing special cells only for some skills (like the school for skills with multiples schools)  
             elif active.is_magic():
                 p = row[0].findall('text:p', ns)
-                cost = int(''.join(p[1].itertext()).replace('pts','').rstrip())
-                #In case of page break or child inside the <p>
                 perk_attrib['name'] = ''.join(p[0].itertext()).rstrip()
+                perk_attrib['cost'] = int(''.join(p[1].itertext()).replace('pts','').rstrip())
+                #In case of page break or child inside the <p>
                 cell_ind = 1
                 if active.multiple_schools():
                     perk_attrib['school'] = row[cell_ind].find('text:p', ns).text

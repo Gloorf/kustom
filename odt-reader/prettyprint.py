@@ -3,7 +3,7 @@
 import zipfile
 
 import xml.dom.minidom
-with zipfile.ZipFile('compétences.odt') as myzip:
+with zipfile.ZipFile('../data/compétences.odt') as myzip:
     with myzip.open('content.xml') as myfile:
         xml = xml.dom.minidom.parse(myfile)
 
