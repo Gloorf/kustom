@@ -15831,7 +15831,7 @@
 				<name>Connaissances</name>
 				<cost>0</cost>
 				<level>1</level>
-				<desc>: permet de substituer Survie à des jets de Connaissances(géologie, Chasse, écologie)</desc>
+				<desc>: permet de substituer Survie à des jets de Connaissances (géologie, Chasse, écologie)</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
