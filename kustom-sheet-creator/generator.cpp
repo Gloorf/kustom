@@ -195,7 +195,8 @@ void CGenerator::updateFont()
 
 void CGenerator::updatePointValue()
 {
-    _c->setAdvantagePoints(_advantageValue->value());
+    //_c->setAdvantagePoints(_advantageValue->value());
+    _advantageValue->setValue(_c->getAdvantagePoints());
     _c->updatePointsTotal();
     _pointValue->setValue(_c->getPointsTotal());
 

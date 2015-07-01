@@ -169,8 +169,9 @@ private slots:
     void onSkillChanged(qint32 skillIndex=0);
     void onPerkChanged(qint32 skillIndex, qint32 perkIndex);
     void writeSheet();
-    void updatePointValue();
     void checkChange();
+public slots:
+    void updatePointValue();
 };
 
 #endif // GENERATOR_H

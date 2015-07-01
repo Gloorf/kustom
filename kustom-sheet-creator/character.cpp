@@ -28,6 +28,7 @@ CCharacter::CCharacter(CData *data)
     _race = new CRace("-1");//For easier initialisation (so we don't have to add an ugly "1st time init" in updateAttribute())
     _name="";
     _points=0;
+    _advantage_points=0;
     _attributes["strengthReligion"] = 0;
     _attributes["healthReligion"] = 0;
 }
@@ -56,6 +57,7 @@ void CCharacter::updateReligionEffect()
 {
     _attributes["strengthReligion"] = 0;
     _attributes["healthReligion"] = 0;
+    _advantage_points = 0;
     for(int i=0;i<_religion->getPowerList().size();i++)
     {
         religionPower power = _religion->getPowerList()[i];
@@ -71,7 +73,7 @@ void CCharacter::updateReligionEffect()
             case 13://Élu des Dieux
                 _attributes["healthReligion"] += 25;
             break;
-            case 84://Force de la Nature
+            case 84://Force de la Naturere
                 _attributes["healthReligion"] += 25;
                 _attributes["strengthReligion"] += 20;
             break;
@@ -79,6 +81,7 @@ void CCharacter::updateReligionEffect()
             break;
 
         }
+        _advantage_points += power.cost;
     }
 }
 
@@ -152,6 +155,10 @@ QString CCharacter::getRaceId()
 void CCharacter::setAdvantagePoints(qint32 value)
 {
     _advantage_points = value;
+}
+qint32 CCharacter::getAdvantagePoints()
+{
+    return _advantage_points;
 }
 
 qint32 CCharacter::raceGiftPoints(bool verbose)

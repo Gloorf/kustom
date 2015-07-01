@@ -164,6 +164,7 @@ CDialogReligion::~CDialogReligion()
     {
         g->getCharacter()->addReligionPower(_powers[i].id);
     }
+    g->updatePointValue();
 
 }
 
