@@ -13,7 +13,7 @@ def get_id(type_id, int_id):
     output = output.ljust(6-len(str(int_id)),'0') + str(int_id)
     return output
 
-with zipfile.ZipFile('compétences.odt') as myzip:
+with zipfile.ZipFile('../data/compétences.odt') as myzip:
     with myzip.open('content.xml') as myfile:
         tree = etree.parse(myfile)
 root = tree.getroot()
@@ -198,6 +198,6 @@ etree.cleanup_namespaces(root)
 
 obj_xml = etree.tostring(root, encoding='utf-8',pretty_print=True)
 reparsed = minidom.parseString(obj_xml).toprettyxml()
-with open("skill.xml", "w") as xml_writer:
+with open("../data/skill.xml", "w") as xml_writer:
     xml_writer.write(reparsed)
 
