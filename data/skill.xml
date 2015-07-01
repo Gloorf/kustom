@@ -15575,7 +15575,7 @@
 				<name>Bavure</name>
 				<cost>1</cost>
 				<level>5</level>
-				<desc>Si réussi 2 fois une défense contre un adversaire au corps-à-corps pendant une lutte, peut utiliser sa victime pour qu'elle encaisse l'attaque.(la victime a alors le droit à un jet de lutte opposés).</desc>
+				<desc>Si réussi 2 fois une défense contre un adversaire au corps-à-corps pendant une lutte, peut utiliser sa victime pour qu'elle encaisse l'attaque(la victime a alors le droit à un jet de lutte opposés).</desc>
 				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
