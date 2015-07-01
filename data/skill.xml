@@ -15885,7 +15885,7 @@
 				<name>Randonneur</name>
 				<cost>0</cost>
 				<level>3</level>
-				<desc>: N'est pas affecté par les malus dus au terrains accidentés.</desc>
+				<desc>: N'est pas affecté par les malus dus aux terrains accidentés.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
@@ -15921,7 +15921,7 @@
 				<name>Survie corporelle</name>
 				<cost>0</cost>
 				<level>3</level>
-				<desc>: Stabilise automatiquement, résiste mieux au froid à la faim et à la chaleur.</desc>
+				<desc>: Stabilise automatiquement, résiste mieux au froid, à la faim et à la chaleur.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
