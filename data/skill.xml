@@ -2811,7 +2811,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</desc>
-				<misc>Choisit un type d’arme souple en </misc>
+				<misc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4188,7 +4188,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Permet d'utiliser bonus d'Agilité au lieu de réflexes pour toucher.</desc>
-				<misc>Ne coûte qu'un point </misc>
+				<misc>Ne coûte qu'un point aux Haut Elfes</misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -13405,7 +13405,7 @@
 				<name>Pic</name>
 				<cost>0</cost>
 				<level>10</level>
-				<desc>: +8 quand se jette à pic.</desc>
+				<desc>: +8 quand je jette à pic.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
