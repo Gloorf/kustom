@@ -7,7 +7,9 @@ from collections import OrderedDict
 from skill import *
 skill_type = {10:"w", 11:"m", 12:"d"}
 skill_speed = {"Rapide.":"f", "Moyen.":"m", "Lent.":"s"}
-kustom_id_type = {"race": "01", "skill":"02", "perk":"03", "misc":"99"}            
+kustom_id_type = {"race": "01", "skill":"02", "perk":"03", "misc":"99"}      
+ns = {'text': 'urn:oasis:names:tc:opendocument:xmlns:text:1.0',
+             'table': 'urn:oasis:names:tc:opendocument:xmlns:table:1.0'}      
 def get_id(type_id, int_id):
     output = kustom_id_type[type_id]
     output = output.ljust(6-len(str(int_id)),'0') + str(int_id)
@@ -19,8 +21,8 @@ with zipfile.ZipFile('../data/compétences.odt') as myzip:
 root = tree.getroot()
 body = root[3][0]
 
-ns = {'text': 'urn:oasis:names:tc:opendocument:xmlns:text:1.0',
-             'table': 'urn:oasis:names:tc:opendocument:xmlns:table:1.0'}
+#We'll use later, it's THE important thing
+skills = []
 #We check for which skill we are switching the type (to use later)
 skill_type_change = []
 mega_titles = body.findall('text:h[@text:style-name="Mega_5f_titre"]', ns)
