@@ -1,0 +1,4 @@
+syntax: glob
+*~
+kustom-sheet-creator.pro.user
+kustom-sheet-creator.user

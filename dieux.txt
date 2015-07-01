@@ -1,0 +1,24 @@
+    asept << religionPower { "Fanatiques d'Asept", true, 15, 0 ,0 }
+          << religionPower { "Maîtres d'Arts", false , 35, 0 , 0 }
+          << religionPower { "Hétaïres", false , 25, 0 , 0 }
+          << religionPower { "Mendiants d'Asept", true , 40, 0 , 0 };
+    chyrma << religionPower { "Prières de Complexion", false , 0, 1 , 1 }
+           << religionPower { "Membru de Chyrma", true , 0, 1 , 1 }
+           << religionPower { "Baptisé de Chyrma", false , 5, 0 , 1 }
+           << religionPower { "Chevalier Élémentaire", true , 40, 0 , 1 }
+           << religionPower { "Paladin de Chyrma", true , 90, 3 , 1 }
+           << religionPower { "Zélé de Chyrma", true , 50, 4 , 1 }
+           << religionPower { "Guérisseur de Chyrma", true , 50, 0 , 1 }
+           << religionPower { "Prodige de Chyrma", true , 40, 5 , 1 }
+           << religionPower { "Élus des Dieux", true , 60, 6 , 1 }
+           << religionPower { "Suzerain Absolu", true , 70, 0 , 1 };
+    horwill << religionPower { "", true , 15, 0 , 1 };
+    iitr << religionPower { "", true , 15, 0 , 1 };
+    levilla << religionPower { "", true , 15, 0 , 1 };
+    likeil << religionPower { "", true , 15, 0 , 1 };
+    mebie << religionPower { "", true , 15, 0 , 1 };
+    naax << religionPower { "", true , 15, 0 , 1 };
+    ostrya << religionPower { "", true , 15, 0 , 1 };
+    ranes << religionPower { "", true , 15, 0 , 1 };
+    ronze << religionPower { "", true , 15, 0 , 1 };
+    tisminefnip << religionPower { "", true , 15, 0 , 1 };
