@@ -183,7 +183,7 @@ for table in tables:
                         
                 perk_attrib['desc'] = ''.join(row[2].find('text:p', ns).itertext())
                 perk_attrib['cooldown'] = row[3].find('text:p', ns).text
-                perk_attrib['misc'] = row[4].find('text:p', ns).text
+                perk_attrib['misc'] = ''.join(row[4].find('text:p', ns).itertext())
             #End of parsing
                 perk_attrib['id'] = get_id('perk', perk_counter)
                 perk = Perk(perk_attrib, prerequisite)

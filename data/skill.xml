@@ -50,7 +50,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de se défendre à l'arbalète au corps-à-corps.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -68,7 +68,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Tir en continu sur une zone, quiconque dans le tour la traverse doit réussir jet de réflexes = 10 + bonus martial + 2 x nombre de carreau tiré dans le tour. Chaque échec par cran de 5 est un carreau qui fait mouche.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -86,7 +86,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>L'arbalétrier choisit un type d'arbalète précis, et bénéficie de +1 à tous ses jets avec.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -104,7 +104,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Ajoute 1d8 dégâts aux objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -140,7 +140,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de faire un tir furtif sans malus au toucher.</desc>
-				<misc>Malus de furtivité variant </misc>
+				<misc>Malus de furtivité variant selon les facteurs environnementaux.</misc>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -163,7 +163,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+2 pour se battre et tirer à l'arbalète dans le noir complet.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -188,7 +188,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de réduire de 1 le malus de précision au corps-à-corps à l'arbalète.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -206,7 +206,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 aux jets de perception, offre 1 de pénétration d'armure.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -224,7 +224,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si tire à moins du quart de la portée de l'arme, peut déséquilibrer l'ennemi (DD équilibre = moitié dégâts)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -242,7 +242,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 à la précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -260,7 +260,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si touche, permet de remonter tous les mécanismes de l'arme.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -278,7 +278,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'annuler 2 de malus d'agilité pour tirer à l'arbalète.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -296,7 +296,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>+4 au toucher sur les cibles volantes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -350,7 +350,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche au corps-à-corps permet de tirer dans la foulée sans bonus de caractéristique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -371,7 +371,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Le malus d'envergure passe de 1 à 3/taille supplémentaire, et ils subissent +2 dégâts/taille supplémentaire</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -389,7 +389,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Pose de combat. Si abandonne sa zone de contrôle, permet d'avoir +4 à l'esquive. Dure 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>10</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -410,7 +410,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, +5 à la précision</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -433,7 +433,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Si esquive un coup de plus de 10, permet de tirer sur l'attaquant sans provoquer d'attaques d'opportunités avec un bonus de +5 au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -454,7 +454,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Pause de combat. Si ne bouge pas, permet de doubler les tirs sans aucuns malus. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -480,7 +480,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de faire des dégâts non létaux mais perd 3 de précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -516,7 +516,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute 1d10 dégâts aux objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -588,7 +588,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si jet d'observation réussi, 1d4 :</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -606,7 +606,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute +3 dégâts et 6 mètres de portée.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -624,7 +624,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de faire un tir furtif sans malus au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -665,7 +665,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+2 contre les attaques au dépourvu si l'archer est prêt à se battre, et +3 dans le noir complet.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -690,7 +690,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si touche, l'ennemi est « secoué » pour un tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -708,7 +708,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de tirer 2 flèches en même temps sans le malus au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -726,7 +726,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pas de déplacement après le tir, joue en dernier pour ce tour. +1d12 dégâts, l'ennemi doit faire un jet d'équilibre à ce tour ci (Eq=dgts/2) pour ne pas tomber.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -744,7 +744,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 à la précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -780,7 +780,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Déclarer en début de tour. Pendant l'action d'un ennemi, tire (Jet de réflexes pour ce tir). Si touche, l'ennemi subit un malus de 4 à toutes ses actions.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -834,7 +834,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Tir en fermant les yeux. Si touche, les dégâts ouvre et offre +2 précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -857,7 +857,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Pose de combat. +5 contre les attaques. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -875,7 +875,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, la zone est « infirme », et l'attaque inflige des saignements.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -893,7 +893,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>L'agilité est comptée double pour toutes les attaques avec Arcs. L'archer peut relancer une attaque s'il a loupé.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -958,7 +958,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de tirer en faisant un déplacement en subissant un malus de 5 au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -976,7 +976,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pas de malus aux jets d'Acrobaties, Escalade, Athlétisme, Discrétion même si arme en main.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -994,7 +994,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Tir en continu sur une zone, quiconque dans le tour la traverse doit réussir jet de réflexes = 10 + bonus martial + 2 x nombre de munitions tirées dans le tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1012,7 +1012,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de diviser par 2 le temps de rechargement à ce tour ci.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1030,7 +1030,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute 1d10 dégâts aux objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1048,7 +1048,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Vise une zone précise. Peut tirer sans malus par action gratuite si quelqu'un entre dans la zone.</desc>
-				<misc>Cumulable avec Tir </misc>
+				<misc>Cumulable avec Tir déterminé</misc>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1066,7 +1066,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de faire un tir furtif sans malus au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1089,7 +1089,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+2 dans le noir complet pour toucher, +1 pour se défendre à distance.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1107,7 +1107,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de tirer dans le dos sans se retourner, subit les malus d'un tir sans vue, mais prend la cible au dépourvu.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1125,7 +1125,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 aux jets de perception, offre 1 de pénétration d'armure.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1143,7 +1143,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Déclarer en début de tour, ne fait rien à ce tour ci. Pendant l'action d'un ennemi, tire (Jet de réflexes pour ce tir). Si touche, l'ennemi subit un malus de 4 à toutes ses actions pour ce tour-ci.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1161,7 +1161,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 à la précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1179,7 +1179,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de faire 2 déplacement en courant et en tirant : si tire aux deux déplacements : -5 au toucher, -2 à la précision si tire à un seul seulement : -2 précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1202,7 +1202,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'avoir 2 armes à feu et de tirer sans malus de précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1220,7 +1220,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>+4 au toucher sur les cibles volantes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1274,7 +1274,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Tir en fermant les yeux. Si touche, peut décaler la localisation d'une zone gratuitement.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1297,7 +1297,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Le malus d'envergure passe de 1 à 3/taille supplémentaire, et ils subissent +3 dégâts/taille supplémentaire</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1315,7 +1315,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Permet de tirer par une action libre à ce tour ci sans malus.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1333,7 +1333,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, +5 à la précision</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1356,7 +1356,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Permet de tripler la portée de l'arme sans malus au toucher et à la précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1374,7 +1374,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Recharger est une action libre jusqu'à 3 fois par tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1400,7 +1400,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Le tir suscite une attaque d'opportunité et utilise 2 actions mais le lanceur gagne (école)*2 portée et la cible devient « secoué ».Dure 1 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1418,7 +1418,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, le lanceur peut attaquer deux fois au prochain tour, et s'il retouche (avec les 2 attaques) il peut attaquer trois fois au troisième tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1436,7 +1436,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pendant une acrobatie, la portée augmente de 12 mètres.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1459,7 +1459,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si réussit un jet d'évasion suscitant des attaques d'opportunités, le lanceur peut attaquer au corps à corps avec son arme de lancer puis la lancer.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1482,7 +1482,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Le lanceur gagne une catégorie d'arme sur les objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1518,7 +1518,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Tant que vous n'utilisez jamais 2 fois la même arme bonus de +1 à tous les jets associés.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1536,7 +1536,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Les dégâts sont non-létaux mais le lanceur gagne un point de précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1572,7 +1572,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si attaqué par un projectile et réussit la défense de 5 ou plus, peut le relancer par action gratuit. +1 aux jets de réflexes et contre les attaques de distance.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1590,7 +1590,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>L'endroit subit une « infirmité ».</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1608,7 +1608,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 aux jets de perception, offre 1 de pénétration d'armure.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1631,7 +1631,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 sur les tirs de précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1649,7 +1649,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pour chaque malus de portée, le lanceur gagne 4 dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1667,7 +1667,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Avec une arme de prédilection, vous pouvez lancer deux fois dans ce tour, mais cela prend tout le tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1685,7 +1685,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si réussi un jet de discrétion / escamotage contre perception, permet de lancer (même sur un ennemi au corps à corps) en le prenant au dépourvu.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1708,7 +1708,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si délocalisation ratée, le lanceur fait les dégâts de la localisation initiale.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1726,7 +1726,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet de lancer par action libre à ce tour-ci. Rajoute réflexes pour toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1744,7 +1744,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Ouvre les dés de dégâts et relance les 1. +2 aux tirs de précision et aux jets de représentations.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1762,7 +1762,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Pose de combat. Si esquive toutes les attaques au prochain tour, permet de lancer une attaque gratuite par attaquant.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1801,7 +1801,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Tous les lancers gagnent 3 de précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1819,7 +1819,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Avec une arme de prédilection, permet de lancer 3 attaques dont une avec technique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1852,7 +1852,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet d'utiliser les autres armes comme des armes improvisées avec un malus de 1.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1870,7 +1870,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>-10 pour désarmer, +2 en lutte, ne peut plus subir « Infirmité » sur bras et mains.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1888,7 +1888,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Permet d'intenter une immobilisation à l'aide de l'objet, si foire lâche l'objet.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1906,7 +1906,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet d'avoir +x (selon l'objet)à la défense, et si évite le coup, l'objet prend des dégâts</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1924,7 +1924,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si le coup touche, il « secoue » la cible. Si le coup était tête, la cible est « déficiente » pour 2d10 tours. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1942,7 +1942,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+1d10 dégâts</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1960,7 +1960,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, pas de dégâts mais éloigne l'ennemi de deux fois la taille de l'objet + 1d4 mètres.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -1978,7 +1978,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de considérer les armes improvisées comme des armes de lancer.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2001,7 +2001,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet d'attaquer sans malus au cours déplacement.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2024,7 +2024,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si bousculade réussie, permet d'intenter un croc-en-jambe.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2045,7 +2045,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Jet d'Évasion contre Perception, si réussi, +5 au toucher, si foire fin du tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2068,7 +2068,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet une autre attaque contre un malus de -10 à la défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2086,7 +2086,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si attaqué par un style, +3 à la défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2104,7 +2104,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'alterner des dégâts tranchants avec des dégâts perforants et vice-versa</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2122,7 +2122,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de lâcher l'objet, jet de réflexes opposés, si réussie permet de détacler automatiquement et de faire un déplacement complet</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2140,7 +2140,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de sortir par action libre des objets de catégorie M.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2158,7 +2158,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de réduire un recast de 1 si touche.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2181,7 +2181,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Le tour où le personnage sort un objet de taille M ou moins, il bénéficie d'un bonus de +2.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2199,7 +2199,7 @@
 				<cost>2</cost>
 				<level>5</level>
 				<desc>Réduit de 5 le malus d'armes disproportionnées.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2217,7 +2217,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche, pas de dégâts, si échoue, touche.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2235,7 +2235,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Pose de combat. Le personnage peut lancer un jet d'équilibre DD=20. S'il réussit, il augmente ses dégâts de 1d10 et « secoue » ses adversaires pour 1d4t. Dure 1 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2253,7 +2253,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>L'armure réduit deux fois moins cette attaque.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2271,7 +2271,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Les ennemis touchés sont « évanescents »pour 1d4 tours et subissent un malus de 10 pour utiliser leur mana.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2289,7 +2289,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Permet d'ajouter (école) aux dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2315,7 +2315,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si esquive une attaque d'un adversaire et le touche au tour suivant, cette attaque bénéficie de +2 à la précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2333,7 +2333,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Augmente les dégâts de l'arme naturelle</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2351,7 +2351,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Réduit de 2 le malus de mêlée.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2387,7 +2387,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, l'adversaire est « déficient » et « secoué » pour 1 round.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2405,7 +2405,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, touche automatiquement les jambes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2423,7 +2423,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de foutre l'ennemi au sol si touche</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2528,7 +2528,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si a de l'élan, permet d'attaquer avec +1d20 au dégâts, mais -1d6 à l'esquive. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2600,7 +2600,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Toutes les attaques infligent 1d4 dégâts supplémentaires</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2618,7 +2618,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet un jet d'agilité contre réflexes, si réussi, désarme, si foire, réplique</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2636,7 +2636,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Déclaré un tour avant, permet une roulade (jet d'acrobaties contre test martial)pendant le tour de l'ennemi, si réussi, une attaque gratuite.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2659,7 +2659,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>La réduction naturelle augmente de 2.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2677,7 +2677,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Pose de combat. +5 contre les attaques à distances. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2695,7 +2695,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si réussie, l'ennemi à un malus d'1d6 à tous ses jets. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2713,7 +2713,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Offre une deuxième attaque.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2731,7 +2731,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, pas de dégâts mais rend l'ennemi « infirme » , « secoué » et « évanescent ». Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2749,7 +2749,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si loupe jet de détacle, permet une attaque avec +2, si loupe attaque réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2775,7 +2775,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, ne fait pas de dégâts mais jet d'armes souples (agilité) contre équilibre.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2811,7 +2811,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</desc>
-				<misc>Choisit un type d’arme souple en </misc>
+				<misc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2829,7 +2829,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Si touche, peut détacler même  si plusieurs ennemis au corps-à-corps.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2847,7 +2847,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>La zone touchée est « infirme ». Dure 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2865,7 +2865,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, jet d'armes souples(force) contre jet d’Équilibre pour déplacer l'ennemi.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2883,7 +2883,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Les ennemis ont un malus de 3 à toutes leurs actions non-physique. Dure (école) tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2901,7 +2901,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Inflige +1d4 dégâts par point de précision sacrifié (max.5)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2919,7 +2919,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, peut tenter une immobilisation de l'ennemi (jet d'(école) force contre équilibre).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -2973,7 +2973,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Permet d'ajouter le bonus d’armes souples aux jets pour les attaques de zone</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3045,7 +3045,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'ajouter le bonus de volonté aux dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3081,7 +3081,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet de doubler son allonge pour ce coup.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3099,7 +3099,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Pose de combat. Chaque fois qu'un ennemi loupe une attaque, il suscite une attaque d'opportunité. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>7</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3117,7 +3117,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet un jet d’Escamotage contre jet de Perception, si réussi touche l'ennemi (malus de précision de 1). Si loupe, suscite une attaque d'opportunité.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3140,7 +3140,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Permet de tripler les attaques, mais sans bonus de force.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3158,7 +3158,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, entre en lutte et inflige des dégâts au cou par tour (Dé maxé + bonus x 2 + dé arme)jusqu'à ce que la lutte finisse (jet d'école(force) contre jet de lutte).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3176,7 +3176,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Dégâts maxé pour la première attaque du round. (Les dés maxés peuvent ouvrir)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3238,7 +3238,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>L'attaque fait +1d12 dégâts temporaires. DD volonté = aux dégâts faits pour annuler</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3256,7 +3256,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si réussi, ½ dégâts mais repousse d'1d6 mètres.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3274,7 +3274,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Les coups à la tête rendent « déficient ». Dure 1d8 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3328,7 +3328,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Si touche, l'ennemi doit faire un jet de Peur Viscérale (dd= 7+ (école)).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3346,7 +3346,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Tentative de désarmement, pas de réplique si échoue</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3364,7 +3364,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Après un saut, +1 dé arme maxé. Si loupe, réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3387,7 +3387,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet d'annuler une deuxième attaque sur soi</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3412,7 +3412,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'utiliser les techniques d'Armes Doubles associées à Bâton.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3430,7 +3430,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de relancer un jet associé à Bâtons</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>20</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3448,7 +3448,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Jet de force opposé à Évasion, si réussi l'ennemi a le choix entre reculer et subir une tentative de renversement, ou tenter d'attaquer (en cas d'échec il subit une réplique et un désarmement)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>9</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3466,7 +3466,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Ajoute le bonus de réflexes aux dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3484,7 +3484,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Ajoute +3 à la défense quand touche un ennemi</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3502,7 +3502,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Permet une attaque gratuite en même temps que celle de l'ennemi, -4 à la défense</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3525,7 +3525,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pose de combat, quand l'ennemi loupe une technique, réplique. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3548,7 +3548,7 @@
 				<cost>2</cost>
 				<level>5</level>
 				<desc>Permet de relancer les 1, ouvre les dés.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3566,7 +3566,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Pose de combat. +5 contre les attaques à distances. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3584,7 +3584,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet de se concentrer sur l'ennemi (DD=dégâts subis + 1/tour)pour gagner +3 à tous les jets contre lui.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3607,7 +3607,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Le coup inflige les dégâts arme des 2 têtes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3625,7 +3625,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si touche, ½ dégâts, mais enlève 1 action à l'ennemi. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3643,7 +3643,7 @@
 				<cost>2</cost>
 				<level>10</level>
 				<desc>Offre 2 attaques supplémentaires.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3661,7 +3661,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Les coups infligent +1d20 dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3705,7 +3705,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pose de combat. Permet d'annuler la prochaine technique contre vous. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3759,7 +3759,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pose défensive. Si l'ennemi rate sa charge de plus de 5 pts, touche auto. +3 à la défense contre les charges.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3777,7 +3777,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, dégâts + fait reculer d'1d6 mètres</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3795,7 +3795,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de soustraire le bonus de bouclier et sa réduction pour les dégâts de chute.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3818,7 +3818,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Attaque du bouclier, si loupe, permet de détacler (mais pas si touche).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3841,7 +3841,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pas de malus pour se défendre au bouclier au sol.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3859,7 +3859,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Permet d'ajouter le bonus de bouclier aux jets pour les attaques de zone</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3877,7 +3877,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Pose de combat. Offre +1 à la défense pour chaque attaque reçue. Pas de mouvement pendant la pause de combat. Dure 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3895,7 +3895,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si attaqué par un style, +3 à la défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3913,7 +3913,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pose de combat. Permet de lancer un jet d'équilibre = dégâts subis pour les réduire de moitié. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3954,7 +3954,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'ajouter son bonus de bouclier pour se défendre en lutte.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3977,7 +3977,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet d'utiliser 2 poses en même temps.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -3995,7 +3995,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche, l'ennemi est « déficient » et subit 1d20 dégâts supplémentaires. Dure 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>7</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4013,7 +4013,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet d'ignorer les attaques d'opportunités pour la charge, mais attaque avec le bouclier.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4031,7 +4031,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche avec le bouclier, offre une deuxième attaque à l'arme principale</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4049,7 +4049,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si réussie, renverse l'adversaire.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4067,7 +4067,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Permet d'ajouter la moitié du bonus de bouclier en défense.</desc>
-				<misc>Ne se cumule pas </misc>
+				<misc>Ne se cumule pas avec Défense ultime (Lance)</misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4090,7 +4090,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>L'ennemi ne peut pas utiliser de techniques ni de sorts pour les 2 prochains tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4108,7 +4108,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Pose de combat. Ajoute +4 à l'équilibre, +2/- de réduction, +4 à la défense, +9 réflexes, mais réduit le déplacement de 50%. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4134,7 +4134,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Réduit le malus de multitude de 3</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4152,7 +4152,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet une deuxième attaque, mais lâche l'arme que ce soit réussi ou foiré.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4188,7 +4188,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Permet d'utiliser bonus d'Agilité au lieu de réflexes pour toucher.</desc>
-				<misc>Ne coûte qu'un point </misc>
+				<misc>Ne coûte qu'un point aux Haut Elfes</misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4206,7 +4206,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute 1d8 dégâts à l'attaque</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4242,7 +4242,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche aux mains, peut désarmer à la place d'attaquer.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4260,7 +4260,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si l'ennemi loupe de plus de 9 son attaque, réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4278,7 +4278,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+2 à la défense en duel.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4296,7 +4296,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet un saut puis une attaque avec +2 au toucher et aux dégâts. Si échec, jet d'équilibre pour ne pas tomber au sol (DD=10+bonus de réflexes de l'ennemi)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4319,7 +4319,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, peut enchaîner sur une technique de lutte dans le tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4342,7 +4342,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de dégainer à une vitesse fulgurante, et de prendre au dépourvu.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4360,7 +4360,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Échange de 2 à 6 points de défense à toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4378,7 +4378,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Inflige une hémorragie à l'ennemi (-2pv/tour).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4414,7 +4414,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Peut ajouter la moitié du bonus de survie pour les tests de réflexes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4437,7 +4437,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Jet de force opposé à Évasion, si réussi l'ennemi a le choix entre reculer et subir une tentative de renversement, ou tenter d'attaquer (en cas d'échec il subit une réplique et un désarmement)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>9</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4455,7 +4455,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>L'épéiste loupera ses attaques sur 5-, mais tous ses recast baissent de 1. Dure 10 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4491,7 +4491,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si l'ennemi utilise une technique martiale à ce tour, elle est annulée et il subit un malus de 3 au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4509,7 +4509,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>L'épéiste ignore toujours les 2 premiers points d'armure naturelle ou non.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4527,7 +4527,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Premier coup étourdit l'ennemi. Offre une action gratuite pour désarmer, avec un bonus de 5.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4545,7 +4545,7 @@
 				<cost>2</cost>
 				<level>10</level>
 				<desc>Permet d'utiliser plusieurs techniques en même temps si possible.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4563,7 +4563,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>L'épéiste déclare une zone. Il a +3 précisions pour l'atteindre et inflige 4d10 dégâts supplémentaires s'il réussit. Si échec, pas de dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4589,7 +4589,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>-10 pour désarmer le Hacher, +2 en lutte, le Hacher ne peut pas souffrir d'infirmité sur ses mains et ses bras.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4625,7 +4625,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>L'attaque fait +1d12 dégâts temporaires. DD volonté = aux dégâts faits pour annuler.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4679,7 +4679,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+1d12 dégâts contre les objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4697,7 +4697,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, touche automatiquement à jambes avec un bonus de 1 précision.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4715,7 +4715,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Les saignements sont doublés pour cette attaque.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4756,7 +4756,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Charge l'ennemi, ajoute (école)+5 dégâts si réussi, mais -5 à la défense pour ce tour si loupe et suscite une attaque d'opportunité.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4774,7 +4774,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si touche, localisation ventrale.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4792,7 +4792,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet 2 attaques, sans bonus de force.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4864,7 +4864,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Offre un bonus de pénétration d'armure de 2, 3 si on possède destruction.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4900,7 +4900,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>-20 à la défense pour ce tour, mais permet une attaque gratuite qui touche automatiquement sur l'ennemi.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4923,7 +4923,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche, renverse l'ennemi (DD équilibre = dégâts subits), suscite une attaque d'opportunité.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4946,7 +4946,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Pour chaque catégorie au dessus de taille G, les dégâts du hacher augmente d'une catégorie.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4964,7 +4964,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Toutes les attaques du personnages ont +1D10 dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5018,7 +5018,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>A chaque fois que l'ennemi loupe une défense de 5 ou plus, il est « déficient » et « secoué ». Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5044,7 +5044,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+1d4 dégâts ouvert</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5062,7 +5062,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pas de malus pour attaquer au sol.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5080,7 +5080,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Inflige une blessure qui fait perdre 1 pv/tour</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5116,7 +5116,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si jet d'observation réussi, 1d4 :</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5134,7 +5134,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de considérer les Lames comme une arme de lancer.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5157,7 +5157,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Lors d'une esquive d'un ou plusieurs ennemis, on ajoute la moitié du bonus de Lames</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5180,7 +5180,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Jet d'Évasion contre Perception, si réussi, +5 au toucher, si foire pas d'attaque(mais action pas perdue)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5203,7 +5203,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si réussi, dégâts puis jet de Lutte vs jet d'Équilibre. Si loupé, jet d'Équilibre pour ne pas tomber</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5226,7 +5226,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>En cas d'égalité, peut choisir de toucher à mains nues.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5285,7 +5285,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Passe toujours 1/-</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5303,7 +5303,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'attaquer avec agilité plutôt que réflexes.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5321,7 +5321,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Offre une deuxième attaque, -3 précisions aux 2 attaques.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5357,7 +5357,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche, dégâts puis peut tenter de désarmer, si échec Jet d'Évasion = 10+bonus de réflexes de l'ennemi+comp.martiale, si réussi, 2ème attaque, sinon réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5375,7 +5375,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Une attaque, puis jet d'Évasion = 10+bonus de réflexes de l'ennemi+comp.martiale, si réussi, 2ème attaque, sinon réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5434,7 +5434,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Interrompt une action, jets de réflexes opposés.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5452,7 +5452,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Glisse aux jambes de l'ennemi avec +3 au toucher, touche automatiquement les jambes, ou les parties génitales pour 5 points.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5473,7 +5473,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Chaque attaque réussie offre une nouvelle attaque</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5491,7 +5491,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Passe toutes armures, inflige dégâts max. (les dés maxés peuvent ouvrir)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5535,7 +5535,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Offre +(école) dégâts si réussie, si loupe 10-(école) à la défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5571,7 +5571,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si touche, l'ennemi est « secoué ». Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5625,7 +5625,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de lancer certaines lances comme des armes de lancer.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5648,7 +5648,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Si touche du manche, permet une autre attaque de la pointe. Si celle-ci échoue, le lancier suscite une attaque d'opportunité.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5671,7 +5671,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute 3 de saignements sur la zone Torse.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5689,7 +5689,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Double le bonus de pénétration de la lance pour ce tour.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5743,7 +5743,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet d'utiliser agilité pour toucher et l'ennemi utilise réflexes pour se défendre. Si utilisé dans le dos d'un ennemi, cela le prend au dépourvu.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5761,7 +5761,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de faire une attaque latérale qui touche toutes les personnes adjacentes et les adversaires bénéficient d'un jet d'évasion (en plus du jet de défense) pour esquiver l'attaque.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5779,7 +5779,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Pose défensive. Si l'ennemi rate sa charge de plus de 5 pts, touche auto. +3 à la défense. Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5802,7 +5802,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Le lancier inflige 2d6 dégâts supplémentaires et perd 2 points de précision. L'adversaire est « déficient ». Dure 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5838,7 +5838,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>+2 précision et l'adversaire est « infirme ». Néanmoins le coup ne peut pas être délocalisé.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5856,7 +5856,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Si est touché de 2 ou moins, permet de faire un jet de force contre un jet d'équilibre. Si réussi, annule l'attaque et repousse d'1d4m.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>7</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5892,7 +5892,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Pose de combat. Offre +3 à la défense, et offre jusqu'à 2 attaques supplémentaires sur tous les ennemis adjacents. Dure 2 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5910,7 +5910,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Les dégâts du lancier sont augmentés d'une catégorie. Ils sont aussi deux fois plus durs à soigner.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5928,7 +5928,7 @@
 				<cost>2</cost>
 				<level>10</level>
 				<desc>Si attaque avec une arme non lourde, le lancier enlève le bonus d'agilité de son adversaire et bénéficie d'une attaque supplémentaire contre cet adversaire à ce tour ci.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5946,7 +5946,7 @@
 				<cost>2</cost>
 				<level>10</level>
 				<desc>Ajoute tout le bonus de défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -5977,7 +5977,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Si égalité, permet jet de force pour gagner.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6013,7 +6013,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Échange +1 au dégât/-1 au toucher.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6031,7 +6031,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet une autre attaque contre un malus de -10 à la défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6049,7 +6049,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>La personne recule d'1d4 mètres.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6067,7 +6067,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Chaque coup à la tête « secoue » et « déficient »</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6085,7 +6085,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+1d10 dégâts</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6103,7 +6103,7 @@
 				<cost>4</cost>
 				<level>1</level>
 				<desc>Chaque coup de masse réussie, permet un coup d'armes naturelles contre un ennemi adjacent, et chaque attaque naturelle réussie un coup de masse.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6126,7 +6126,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 au toucher contre les ennemis ayant les 2 mains prises.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6144,7 +6144,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+1d12 dégâts contre les objets.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6162,7 +6162,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Annule la pose ennemie, l'enlève si touche, et le « secoue ». Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6180,7 +6180,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si touche, l'ennemi est « évanescent ». Dure 1d4 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6216,7 +6216,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si touche, +2d10 dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6239,7 +6239,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Immunité aux conditions : « secoué » et « déficient »</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6257,7 +6257,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Chaque fois que l'ennemi est touché, il subit un malus de 2 à l'attaque/défense.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6311,7 +6311,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Chaque coup consécutif inflige 2d6 dégâts supplémentaires.(jusqu'à un maximum de 8d6).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6329,7 +6329,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Offre 2 de pénétration d'armure (3 si possède Destruction).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6347,7 +6347,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Double la force pour cette attaque.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6365,7 +6365,7 @@
 				<cost>2</cost>
 				<level>10</level>
 				<desc>Les coups paralysentDD constitution = ½ dégâts</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6383,7 +6383,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>+6d4 dégâts. Ouvre tous les dés.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -6401,7 +6401,7 @@
 				<cost>1</cost>
 				<level>10</level>
 				<desc>Permet de localiser la colonne vertébrale pour 6 points, +2 dé arme dégâts de dos.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11329,7 +11329,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+4 contre les tentatives de croc-en-jambes et +2 contre les bousculades.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11365,7 +11365,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Déclarer avant le tour de l'ennemi. Si défense réussi, permet de bloquer l'attaque et de rentrer en lutte avec l'arme de l'ennemi.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11383,7 +11383,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Ajoute un malus de 2 à l'attaque si plus de 3 ennemis au corps-à-corps.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11419,7 +11419,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+1 à la défense dans l'obscurité.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11455,7 +11455,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de se mettre sous couvert et d'en augmenter la protection.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>0</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11473,7 +11473,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Quand réussi une défense, peut relancer le jet de défense pour faire une tentative de désarmement.(Jet de défense[force] contre jet d'équilibre)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11491,7 +11491,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de repousser de 1d4 mètres les ennemis adjacents. Ils peuvent porter une réplique avec un malus de 5 au toucher ou faire un jet d'équilibre contre force pour ne pas bouger.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11509,7 +11509,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Si tombe, peut faire un jet d'agilité (DD= 15)pour se relever directement.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11527,7 +11527,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>Ajoute +3 aux tests de réflexes visant à se défendre.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11545,7 +11545,7 @@
 				<cost>2</cost>
 				<level>3</level>
 				<desc>+2 contre les intrusions psychiques.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11581,7 +11581,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Dure 1d6 tours. +2 à la défense quand statique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>8</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11599,7 +11599,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Permet de se concentrer sur un unique adversaire, lui infligeant 2 de malus de précision.(DD : 11+1/t).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11622,7 +11622,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Pose de combat. +5 contre les attaques à distances pour 1d4 tours</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11640,7 +11640,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Peut encaisser une attaque à la main ou au bras (pair/impair)avant le dé de localisation.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11658,7 +11658,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>+3 à la défense contre les armes lourdes si ne porte pas d'armure.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11676,7 +11676,7 @@
 				<cost>2</cost>
 				<level>5</level>
 				<desc>+3 à la défense quand pris par surprise.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11694,7 +11694,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Quand encaisse un coup, peut faire un jet d'acrobaties pour s'éloigner directement.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11717,7 +11717,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Permet d'attaquer tous les ennemis choisissant de répliquer avant eux.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11738,7 +11738,7 @@
 				<cost>2</cost>
 				<level>7</level>
 				<desc>Pose de combat. Permet d'utiliser son bonus de réflexes en plus de celui d'agi pour se défendre pendant 1d6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>9</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11756,7 +11756,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Jets de réflexes opposés. Si réussi, jet de force contre équilibre pour repousser l'adversaire (2 de différence = 1 m de recul)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -11774,7 +11774,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Pose de combat. Ajoute 1d10 à la défense si n'agit qu'une fois par round. 1D6 tours.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>9</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15226,7 +15226,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Permet de lancer une attaque de lutte pour rentrer en immobilisation localisée.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15244,7 +15244,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>+2 en lutte quand a chargé.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15262,7 +15262,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>En lutte, permet de repousser l'ennemi avec un jet de lutte contre équilibre, 1d4 + 1m par tranche de 2 points d'écart.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15280,7 +15280,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Lorsqu'attaqué, peut lancer 2 défense au lieu d'une pour rentrer en lutte avec l'ennemi.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15298,7 +15298,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>En lutte, jet de lutte opposé pour désarmer l'adversaire. Si échoue, réplique.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15316,7 +15316,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Pas de malus lorsque lutte au sol.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15334,7 +15334,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>En lutte, peut utiliser Évasion pour se défendre sans malus lorsqu'attaqué.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15357,7 +15357,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>En immobilisation, permet d'attaquer avec un malus de 4. Si échoue, fin de la lutte.</desc>
-				<misc>Malus varie pour les armes </misc>
+				<misc>Malus varie pour les armes (pas de malus à mains nues)</misc>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15375,7 +15375,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>En lutte, permet de tomber au sol avec la cible. Jet de lutte + bonus de poids contre jet d'équilibre.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15393,7 +15393,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+2 au jet d'équilibre, +2 pour maintenir une prise.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15411,7 +15411,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>Chaque tour consécutif passé en lutte inflige un malus de 1 à la cible (jusqu'à un maximum de 3.)</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15447,7 +15447,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>+1 en lutte, +4 contre le désarmement.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15483,7 +15483,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si réussi, jet de lutte opposé pour immobiliser totalement la cible.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15501,7 +15501,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Chaque tour consécutif passé en lutte inflige (tours)d4+bonus de force+bonus martial dégâts. Le cible doit avoir été immobilisé.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>6</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15519,7 +15519,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>En poussée si plus de 5 points d'écart, peut renverser l'ennemi au sol.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>5</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15540,7 +15540,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>+2 à tous les jets contre les ennemis se battant corps-à-corps.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15558,7 +15558,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si touche, jet de lutte opposé. Si réussi, la cible entre en asphyxie et ne peux pas parler.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>3</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15576,7 +15576,7 @@
 				<cost>1</cost>
 				<level>5</level>
 				<desc>Si réussi 2 fois une défense contre un adversaire au corps-à-corps pendant une lutte, peut utiliser sa victime pour qu'elle encaisse l'attaque.(la victime a alors le droit à un jet de lutte opposés).</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>2</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15630,7 +15630,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Lorsque l'ennemi est renversé, peut faire un plaquage pour assommer pour 1d4 rounds la cible. Au sol si loupe, inflige 2d8 + bonus de poids dégâts.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>4</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15651,7 +15651,7 @@
 				<cost>1</cost>
 				<level>7</level>
 				<desc>Une immobilisation inflige des séquelles si différence de plus de 5 points.</desc>
-				<misc xsi:nil="true"/>
+				<misc/>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
