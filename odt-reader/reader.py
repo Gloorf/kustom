@@ -198,6 +198,6 @@ etree.cleanup_namespaces(root)
 
 obj_xml = etree.tostring(root, encoding='utf-8',pretty_print=True)
 reparsed = minidom.parseString(obj_xml).toprettyxml()
-with open("output.xml", "w") as xml_writer:
+with open("skill.xml", "w") as xml_writer:
     xml_writer.write(reparsed)
 
