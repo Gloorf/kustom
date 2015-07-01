@@ -2811,7 +2811,7 @@
 				<cost>1</cost>
 				<level>1</level>
 				<desc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</desc>
-				<misc>Choisit un type d’arme souple en particulier, et bénéficie de +1 à tous ses jets avec.</misc>
+				<misc>Choisit un type d’arme souple en </misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -4188,7 +4188,7 @@
 				<cost>2</cost>
 				<level>1</level>
 				<desc>Permet d'utiliser bonus d'Agilité au lieu de réflexes pour toucher.</desc>
-				<misc>Ne coûte qu'un point aux Haut Elfes</misc>
+				<misc>Ne coûte qu'un point </misc>
 				<cooldown xsi:nil="true"/>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15357,7 +15357,7 @@
 				<cost>1</cost>
 				<level>3</level>
 				<desc>En immobilisation, permet d'attaquer avec un malus de 4. Si échoue, fin de la lutte.</desc>
-				<misc>Malus varie pour les armes (pas de malus à mains nues)</misc>
+				<misc>Malus varie pour les armes </misc>
 				<cooldown>1</cooldown>
 				<dd/>
 				<slowIncant>false</slowIncant>
@@ -15885,7 +15885,7 @@
 				<name>Randonneur</name>
 				<cost>0</cost>
 				<level>3</level>
-				<desc>: N'est pas affecté par les malus dû au terrains accidentés.</desc>
+				<desc>: N'est pas affecté par les malus dus au terrains accidentés.</desc>
 				<misc/>
 				<cooldown/>
 				<dd/>
