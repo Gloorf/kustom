@@ -25,7 +25,8 @@ CCharacter::CCharacter(CData *data)
 {
     _d = data;
     _religion = new CReligion;
-    _race = new CRace("-1");//For easier initialisation (so we don't have to add an ugly "1st time init" in updateAttribute())
+    _race = new CRace("-1");//Easier to do it this way
+    updateRace(_d->getFullId("race",0));
     _name="";
     _points=0;
     _advantage_points=0;

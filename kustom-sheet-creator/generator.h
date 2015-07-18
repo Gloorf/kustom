@@ -109,11 +109,14 @@ private:
     CDialogRemoveSkill *_dialogRemoveSkill;
     CDialogReligion *_dialogReligion;
     COdtWriter *_writer;
+    //Init
     void createPersonalBox();
     void createCaracBox();
     void createSkillBox();
     void createGeneratorLayout();
-    void updateSkillBoxes();
+    //Destroy & recreate the skill interface (all boxes) from the data in character
+    void updateSkillGUI();
+    void checkSkillPrerequisite(bool verbose);
 
     QVBoxLayout *_generatorLayout;
     QHBoxLayout *_topLayout;//For personal + carac boxes
@@ -138,6 +141,7 @@ private:
     QPushButton *_buttonRemoveSkill;
     QPushButton *_buttonReligion;
     QPushButton *_buttonWriteSheet;
+    QPushButton *_buttonReset;
     //Input from personalBox
     QLineEdit *_charName;
     QComboBox *_raceI;
@@ -151,12 +155,11 @@ private:
 
     //Based on input
     QFont _usedFont;
-    void checkSkillPrerequisite(bool verbose);
 private slots:
-    void updateAttribute();
-    void updateBaseAttribute();
-    void updatePersonal();
-    void updateFont();
+    void onAttributeChanged();
+    void onRaceChanged();
+    void onNameChanged();
+    void onFontChanged();
 
     void addSkillDialog();
     void removeSkillDialog();
@@ -168,8 +171,10 @@ private slots:
     void displayCharacter();
     void onSkillChanged(qint32 skillIndex=0);
     void onPerkChanged(qint32 skillIndex, qint32 perkIndex);
+
     void writeSheet();
     void checkChange();
+    void resetSheet();
 public slots:
     void updatePointValue();
 };

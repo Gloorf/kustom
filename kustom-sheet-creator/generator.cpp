@@ -34,7 +34,7 @@ CGenerator::CGenerator(CData *data)
     createSkillBox();
     createGeneratorLayout();
     setLayout(_generatorLayout);
-    updateBaseAttribute();
+    onRaceChanged();
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(checkChange()));
     timer->start(10);
@@ -65,10 +65,10 @@ void CGenerator::createPersonalBox()
     {
         _raceI->addItem(d->getRaceB()[i]->getName());
     }
-    connect(_raceI, SIGNAL(currentIndexChanged(int)), this, SLOT(updateBaseAttribute()));
-    connect(_charName, SIGNAL(textChanged(QString)), this ,SLOT(updatePersonal()));
+    connect(_raceI, SIGNAL(currentIndexChanged(int)), this, SLOT(onRaceChanged()));
+    connect(_charName, SIGNAL(textChanged(QString)), this ,SLOT(onNameChanged()));
     connect(_advantageValue, SIGNAL(valueChanged(int)), this, SLOT(updatePointValue()));
-    connect(_buttonFont, SIGNAL(clicked()), this, SLOT(updateFont()));
+    connect(_buttonFont, SIGNAL(clicked()), this, SLOT(onFontChanged()));
     _personalGrid->addWidget(new QLabel(tr("Nom :")),0,0);
     _personalGrid->addWidget(new QLabel(tr("Votre race")),1,0);
     _personalGrid->addWidget(new QLabel(tr("Points supplémentaires")),2,0);
@@ -104,7 +104,7 @@ void CGenerator::createCaracBox()
         _attributeGrid->addWidget(new QLabel(d->getCaracName()[i]), i + 1, 0);
         _attributeGrid->addWidget(_attributeI[i], i + 1, 1);
         _attributeGrid->addWidget(_attributeB[i], i + 1, 2);
-        connect(_attributeI[i], SIGNAL(valueChanged(int)), this, SLOT(updateAttribute()));
+        connect(_attributeI[i], SIGNAL(valueChanged(int)), this, SLOT(onAttributeChanged()));
     }
     _attributeBox->setLayout(_attributeGrid);
 }
@@ -131,14 +131,17 @@ void CGenerator::createGeneratorLayout()
     _buttonAddSkill = new QPushButton("Ajouter une compétence");
     _buttonRemoveSkill = new QPushButton("Supprimer une compétence");
     _buttonReligion = new QPushButton("Pouvoirs de religions");
+    _buttonReset = new QPushButton("Remise à zéro");
     _buttonWriteSheet = new QPushButton("Générer la fiche");
     connect(_buttonAddSkill, SIGNAL(clicked()), this, SLOT(addSkillDialog()));
     connect(_buttonRemoveSkill, SIGNAL(clicked()), this, SLOT(removeSkillDialog()));
     connect(_buttonReligion, SIGNAL(clicked(bool)), this, SLOT(religionDialog()));
+    connect(_buttonReset, SIGNAL(clicked(bool)), this, SLOT(resetSheet()));
     connect(_buttonWriteSheet, SIGNAL(clicked()), this, SLOT(writeSheet()));
     _buttonLayout->addWidget(_buttonAddSkill);
     _buttonLayout->addWidget(_buttonRemoveSkill);
     _buttonLayout->addWidget(_buttonReligion);
+    _buttonLayout->addWidget(_buttonReset);
     _buttonLayout->addWidget(_buttonWriteSheet);
     //For debug only, i should add something or what
     _buttonDebug= new QPushButton("Infos debug");
@@ -152,7 +155,7 @@ void CGenerator::createGeneratorLayout()
     _generatorLayout->addWidget(_buttonBox);
 }
 
-void CGenerator::updateAttribute()
+void CGenerator::onAttributeChanged()
 {
         _c->setAttribute("health", _attributeI[0]->value());
         _c->setAttribute("strength", _attributeI[1]->value());
@@ -163,10 +166,10 @@ void CGenerator::updateAttribute()
         updatePointValue();
 }
 
-void CGenerator::updateBaseAttribute()
+void CGenerator::onRaceChanged()
 {
     _c->updateRace(d->getFullId("race", _raceI->currentIndex()) );
-    updateSkillBoxes();//Called here because changing race might change our speed
+    updateSkillGUI();
     _attributeB[0]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("health"));
     _attributeB[1]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("strength"));
     _attributeB[2]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("agility"));
@@ -182,11 +185,11 @@ void CGenerator::updateBaseAttribute()
     _attributeI[5]->setValue( _attributeB[5]->value());
 }
 
-void CGenerator::updatePersonal()
+void CGenerator::onNameChanged()
 {
     _c->setName(_charName->text());
 }
-void CGenerator::updateFont()
+void CGenerator::onFontChanged()
 {
     bool ok;
     _usedFont = QFontDialog::getFont(&ok, _usedFont, this);
@@ -408,7 +411,7 @@ void CGenerator::addSkillFromDialog()
     _c->setSkillParam(skillIndex, "special",  input->special->itemData(input->special->currentIndex()).toString());
     _c->updatePerkNumber(skillIndex, _c->getPerkNumberForSkill(skillIndex));
 
-    updateSkillBoxes();
+    updateSkillGUI();
     checkSkillPrerequisite(false);
     updatePointValue();
     _dialogAddSkill->close();
@@ -418,7 +421,7 @@ void CGenerator::removeSkillFromDialog()
 {
     qint32 skillIndex = _dialogRemoveSkill->nameI->currentIndex();
     _c->removeSkillFromIndex(skillIndex);
-    updateSkillBoxes();
+    updateSkillGUI();
     checkSkillPrerequisite(false);
     updatePointValue();
 
@@ -430,7 +433,7 @@ void CGenerator::removeSkillFromDialog()
  * (in _skillInputLayout), the box for the grid (in _skillInputBox), and put them inside _skillGrid
  * */
 
-void CGenerator::updateSkillBoxes()
+void CGenerator::updateSkillGUI()
 {
     //First we remove
     int skillNum=_skillI.size();
@@ -513,7 +516,7 @@ void CGenerator::onSkillChanged(qint32 skillIndex)
         _c->setSkillParam(skillIndex, "level", QString::number(input->level->value()));
         _c->setSkillParam(skillIndex, "special",  input->special->itemData(input->special->currentIndex()).toString());
         _c->updatePerkNumber(skillIndex, _c->getPerkNumberForSkill(skillIndex));
-        updateSkillBoxes();
+        updateSkillGUI();
         checkSkillPrerequisite(false);
         updatePointValue();
 }
@@ -580,6 +583,19 @@ void CGenerator::displayCharacter()
 CCharacter *CGenerator::getCharacter()
 {
     return _c;
+}
+
+void CGenerator::resetSheet()
+{
+    CCharacter *tmp = new CCharacter(d);
+    delete _c;
+    _c = tmp;
+    _raceI->setCurrentIndex(0);
+    onRaceChanged();
+    onNameChanged();
+    onAttributeChanged();
+    updateSkillGUI();
+    updatePointValue();
 }
 
 CSkillInput::CSkillInput(QStringList skillName, QStringList skillId, qint32 skillIndex)
