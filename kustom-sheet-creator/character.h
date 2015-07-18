@@ -47,6 +47,7 @@ public:
     void setName(QString name);
     void setAdvantagePoints(qint32 value);
     qint32 getAdvantagePoints();
+    qint32 getReligionPoints();
     qint32 getPointsTotal();
     QString getRaceId();
     QString getName();

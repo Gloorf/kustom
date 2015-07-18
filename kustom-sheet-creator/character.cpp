@@ -58,7 +58,6 @@ void CCharacter::updateReligionEffect()
 {
     _attributes["strengthReligion"] = 0;
     _attributes["healthReligion"] = 0;
-    _advantage_points = 0;
     for(int i=0;i<_religion->getPowerList().size();i++)
     {
         religionPower power = _religion->getPowerList()[i];
@@ -82,8 +81,17 @@ void CCharacter::updateReligionEffect()
             break;
 
         }
-        _advantage_points += power.cost;
     }
+}
+
+qint32 CCharacter::getReligionPoints()
+{
+    qint32 output = 0;
+    for(int i=0;i<_religion->getPowerList().size();i++)
+    {
+        output += _religion->getPowerList()[i].cost;
+    }
+    return output;
 }
 
 void CCharacter::addReligionPower(QString id)
@@ -233,6 +241,7 @@ void CCharacter::updatePointsTotal(bool verbose)
 {
     //Starting with race + carac
     qint32 value = _advantage_points;
+    value += getReligionPoints();
     value += _race->getAttribute("cost");
     //Adjust health because it's 7.5/hp (fuck you andreas)
     if( (getAttribute("health") - _race->getAttribute("health")) % 2 == 0)

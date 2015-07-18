@@ -47,10 +47,13 @@ void CGenerator::createPersonalBox()
     _charName = new QLineEdit;
     _raceI = new QComboBox;
     _pointValue = new QSpinBox;
-    _pointValue->setMaximum(10000);
+    _pointValue->setMaximum(100000);
     _pointValue->setReadOnly(true);
     _advantageValue = new QSpinBox;
-    _advantageValue->setMaximum(10000);
+    _advantageValue->setMaximum(100000);
+    _religionValue = new QSpinBox;
+    _religionValue->setMaximum(100000);
+    _religionValue->setReadOnly(true);
     _usedFont= QFont(d->getSettings()->value("baseFont").value<QString>(), 12);
     _fontNameEdit = new QLineEdit;
     _fontNameEdit->setReadOnly(true);
@@ -73,15 +76,17 @@ void CGenerator::createPersonalBox()
     _personalGrid->addWidget(new QLabel(tr("Votre race")),1,0);
     _personalGrid->addWidget(new QLabel(tr("Points supplémentaires")),2,0);
     _personalGrid->itemAtPosition(2,0)->widget()->setToolTip("Points non inclus dans le calculateur (avantages principalement");
-    _personalGrid->addWidget(new QLabel(tr("Points Kustom")),3,0);
-    _personalGrid->itemAtPosition(3,0)->widget()->setToolTip("Valeur calculée en K pour votre personnage");
-    _personalGrid->addWidget(new QLabel(tr("Police ")),4,0);
+    _personalGrid->addWidget(new QLabel(tr("Points de religion")),3,0);
+    _personalGrid->addWidget(new QLabel(tr("Points Kustom")),4,0);
+    _personalGrid->itemAtPosition(4,0)->widget()->setToolTip("Valeur calculée en K pour votre personnage");
+    _personalGrid->addWidget(new QLabel(tr("Police ")),5,0);
     _personalGrid->addWidget(_charName,0,1);
     _personalGrid->addWidget(_raceI,1,1);
     _personalGrid->addWidget(_advantageValue,2,1);
-    _personalGrid->addWidget(_pointValue,3,1);
-    _personalGrid->addWidget(_fontNameEdit,4,1);
-    _personalGrid->addWidget(_buttonFont, 5,0, 1, -1);
+    _personalGrid->addWidget(_religionValue,3,1);
+    _personalGrid->addWidget(_pointValue,4,1);
+    _personalGrid->addWidget(_fontNameEdit,5,1);
+    _personalGrid->addWidget(_buttonFont, 6,0, 1, -1);
     _personalBox->setLayout(_personalGrid);
 }
 
@@ -198,11 +203,10 @@ void CGenerator::onFontChanged()
 
 void CGenerator::updatePointValue()
 {
-    //_c->setAdvantagePoints(_advantageValue->value());
-    _advantageValue->setValue(_c->getAdvantagePoints());
+    _c->setAdvantagePoints(_advantageValue->value());
+    _religionValue->setValue(_c->getReligionPoints());
     _c->updatePointsTotal();
     _pointValue->setValue(_c->getPointsTotal());
-
 }
 
 void CGenerator::addSkillDialog()

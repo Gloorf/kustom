@@ -147,6 +147,7 @@ private:
     QComboBox *_raceI;
     QSpinBox *_pointValue;
     QSpinBox *_advantageValue;
+    QSpinBox *_religionValue;
     QLineEdit *_fontNameEdit;
     //input from caracBox
     QList<QSpinBox *> _attributeI;
