@@ -32,6 +32,7 @@ CCharacter::CCharacter(CData *data)
     _advantage_points=0;
     _attributes["strengthReligion"] = 0;
     _attributes["healthReligion"] = 0;
+    _attribute_name << "health" << "strength"<< "agility"<< "reflexe"<< "willpower" << "mana";
 }
 
 void CCharacter::updateRace(QString id)
@@ -152,14 +153,18 @@ void CCharacter::setAttribute(QString name, qint32 value)
 
 void CCharacter::setAttributeById(qint32 index, qint32 value)
 {
-    QStringList attributeName;
-    attributeName << "health" << "strength"<< "agility"<< "reflexe"<< "willpower" << "mana";
-    _attributes.insert(attributeName[index], value);
+
+    _attributes.insert(_attribute_name[index], value);
 }
 
 qint32 CCharacter::getAttribute(QString name)
 {
     return _attributes.value(name);
+}
+
+qint32 CCharacter::getAttributeById(qint32 index)
+{
+    return _attributes.value(_attribute_name[index]);
 }
 
 QString CCharacter::getRaceId()

@@ -34,7 +34,6 @@ CGenerator::CGenerator(CData *data)
     createSkillBox();
     createGeneratorLayout();
     setLayout(_generatorLayout);
-    onRaceChanged();
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(checkChange()));
     timer->start(10);
@@ -115,6 +114,8 @@ void CGenerator::createCaracBox()
         connect(_attributeI[i], SIGNAL(valueChanged(int)), _mapper_attribute, SLOT(map()));
     }
     _attributeBox->setLayout(_attributeGrid);
+    updateBaseAttribute();
+    updateCharacterAttribute();
 }
 
 void CGenerator::createSkillBox()
@@ -172,20 +173,24 @@ void CGenerator::onAttributeChanged(qint32 index)
 void CGenerator::onRaceChanged()
 {
     _c->updateRace(d->getFullId("race", _raceI->currentIndex()) );
-    updateSkillGUI();
+    updateBaseAttribute();
+    updateCharacterAttribute();
+}
+void CGenerator::updateCharacterAttribute()
+{
+    for(int i=0;i<_attributeI.size();i++)
+    {
+        _attributeI[i]->setValue(_c->getAttributeById(i));
+    }
+}
+void CGenerator::updateBaseAttribute()
+{
     _attributeB[0]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("health"));
     _attributeB[1]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("strength"));
     _attributeB[2]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("agility"));
     _attributeB[3]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("reflexe"));
     _attributeB[4]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("willpower"));
     _attributeB[5]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("mana"));
-
-    _attributeI[0]->setValue( _attributeB[0]->value());
-    _attributeI[1]->setValue( _attributeB[1]->value());
-    _attributeI[2]->setValue( _attributeB[2]->value());
-    _attributeI[3]->setValue( _attributeB[3]->value());
-    _attributeI[4]->setValue( _attributeB[4]->value());
-    _attributeI[5]->setValue( _attributeB[5]->value());
 }
 
 void CGenerator::onNameChanged()

@@ -117,7 +117,8 @@ private:
     //Destroy & recreate the skill interface (all boxes) from the data in character
     void updateSkillGUI();
     void checkSkillPrerequisite(bool verbose);
-
+    void updateCharacterAttribute();
+    void updateBaseAttribute();
     QVBoxLayout *_generatorLayout;
     QHBoxLayout *_topLayout;//For personal + carac boxes
     QGridLayout *_personalGrid;

@@ -44,7 +44,7 @@ public:
     void setAttribute(QString name, qint32 value);
     void setAttributeById(qint32 index, qint32 value);
     qint32 getAttribute(QString name);
-
+    qint32 getAttributeById(qint32 index);
     void setName(QString name);
     void setAdvantagePoints(qint32 value);
     qint32 getAdvantagePoints();
@@ -71,6 +71,7 @@ private:
     QString _name;//Of the character
     qint32 _points;//Total point cost
     qint32 _advantage_points;
+    QStringList _attribute_name;//SUPER UGLY NEED TO DO SOMETHING ABOUT IT
     /*
      * name, race
      * hp, strength, agility, reflexe, willpower, mana
