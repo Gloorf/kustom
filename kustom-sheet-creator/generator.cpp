@@ -37,6 +37,7 @@ CGenerator::CGenerator(CData *data)
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(checkChange()));
     timer->start(10);
+    updateGUI(_c->randomise());
 
 }
 void CGenerator::createPersonalBox()
@@ -69,7 +70,7 @@ void CGenerator::createPersonalBox()
     }
     connect(_raceI, SIGNAL(currentIndexChanged(int)), this, SLOT(onRaceChanged()));
     connect(_charName, SIGNAL(textChanged(QString)), this ,SLOT(onNameChanged()));
-    connect(_advantageValue, SIGNAL(valueChanged(int)), this, SLOT(updatePointValue()));
+    connect(_advantageValue, SIGNAL(valueChanged(int)), this, SLOT(onAdvantageValueChanged()));
     connect(_buttonFont, SIGNAL(clicked()), this, SLOT(onFontChanged()));
     _personalGrid->addWidget(new QLabel(tr("Nom :")),0,0);
     _personalGrid->addWidget(new QLabel(tr("Votre race")),1,0);
@@ -164,6 +165,15 @@ void CGenerator::createGeneratorLayout()
     _generatorLayout->addWidget(_buttonBox);
 }
 
+void CGenerator::updateGUI(qint32 index_race)
+{
+    updateCharacterAttribute();
+    updateBaseAttribute();
+    updateSkillGUI();
+    updatePersonal(index_race);
+    updatePointValue();
+}
+
 void CGenerator::onAttributeChanged(qint32 index)
 {
     _c->setAttributeById(index, _attributeI[index]->value());
@@ -176,6 +186,13 @@ void CGenerator::onRaceChanged()
     updateBaseAttribute();
     updateCharacterAttribute();
 }
+
+void CGenerator::onAdvantageValueChanged()
+{
+    _c->setAdvantagePoints(_advantageValue->value());
+    updatePointValue();
+}
+
 void CGenerator::updateCharacterAttribute()
 {
     for(int i=0;i<_attributeI.size();i++)
@@ -193,6 +210,14 @@ void CGenerator::updateBaseAttribute()
     _attributeB[5]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("mana"));
 }
 
+void CGenerator::updatePersonal(qint32 index_race)
+{
+    _charName->setText(_c->getName());
+    _advantageValue->setValue(_c->getAdvantagePoints());
+    _religionValue->setValue(_c->getReligionPoints());
+    _raceI->setCurrentIndex(index_race);
+}
+
 void CGenerator::onNameChanged()
 {
     _c->setName(_charName->text());
@@ -206,7 +231,6 @@ void CGenerator::onFontChanged()
 
 void CGenerator::updatePointValue()
 {
-    _c->setAdvantagePoints(_advantageValue->value());
     _religionValue->setValue(_c->getReligionPoints());
     _c->updatePointsTotal();
     _pointValue->setValue(_c->getPointsTotal());

@@ -23,6 +23,8 @@ along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 
 CCharacter::CCharacter(CData *data)
 {
+    QTime time = QTime::currentTime();
+    qsrand((uint)time.msec());
     _d = data;
     _religion = new CReligion;
     _race = new CRace("-1");//Easier to do it this way
@@ -33,6 +35,30 @@ CCharacter::CCharacter(CData *data)
     _attributes["strengthReligion"] = 0;
     _attributes["healthReligion"] = 0;
     _attribute_name << "health" << "strength"<< "agility"<< "reflexe"<< "willpower" << "mana";
+}
+qint32 CCharacter::randInt(qint32 low, qint32 high)
+{
+    return qrand() % ((high + 1) - low) + low;
+}
+qint32 CCharacter::randomise()
+{
+    qint32 rdm_id = randInt(0, _d->getRaceB().size() -1);
+    updateRace(_d->getFullId("race", rdm_id));
+    _attributes["health"] += randInt(5, 15);
+    _attributes["strength"] += randInt(5, 15);
+    _attributes["reflexe"] += randInt(5, 15);
+    _attributes["agility"] += randInt(5, 15);
+    _attributes["willpower"] += randInt(5, 15);
+    _attributes["mana"] += randInt(5, 15);
+    _advantage_points += randInt(7, 15);
+    qint32 rdm_skill_id = randInt(0, _d->getSkillB().size() -1);
+    addSkill(_d->getFullId("skill", rdm_skill_id));
+    setSkillParam(0, "level", QString::number(randInt(1,5)));
+    QStringList spec;
+    spec << "n" << "t" << "g";
+    setSkillParam(0, "special", spec[randInt(0,2)]);
+    updatePerkNumber(0, getPerkNumberForSkill(0));
+    return rdm_id;
 }
 
 void CCharacter::updateRace(QString id)

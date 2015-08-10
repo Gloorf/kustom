@@ -114,11 +114,13 @@ private:
     void createCaracBox();
     void createSkillBox();
     void createGeneratorLayout();
-    //Destroy & recreate the skill interface (all boxes) from the data in character
+    //Based solely on the character data
+    void updateGUI(qint32 index_race);
     void updateSkillGUI();
     void checkSkillPrerequisite(bool verbose);
     void updateCharacterAttribute();
     void updateBaseAttribute();
+    void updatePersonal(qint32 index_race);
     QVBoxLayout *_generatorLayout;
     QHBoxLayout *_topLayout;//For personal + carac boxes
     QGridLayout *_personalGrid;
@@ -159,6 +161,7 @@ private:
     QFont _usedFont;
 private slots:
     void onAttributeChanged(qint32 index);
+    void onAdvantageValueChanged();
     void onRaceChanged();
     void onNameChanged();
     void onFontChanged();
