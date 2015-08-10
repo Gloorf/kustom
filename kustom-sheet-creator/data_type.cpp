@@ -371,7 +371,7 @@ CRace::CRace(QString id)
 {
     _id=id;
     _name="";
-    _carac["hp"]=0;
+    _carac["health"]=0;
     _carac["strength"]=0;
     _carac["agility"]=0;
     _carac["reflexe"]=0;

@@ -153,11 +153,11 @@ private:
     QList<QSpinBox *> _attributeI;
     QList<QSpinBox *> _attributeB;
     QList<QPointer<CSkillInput> > _skillI;
-
+    QSignalMapper *_mapper_attribute;
     //Based on input
     QFont _usedFont;
 private slots:
-    void onAttributeChanged();
+    void onAttributeChanged(qint32 index);
     void onRaceChanged();
     void onNameChanged();
     void onFontChanged();
@@ -171,7 +171,7 @@ private slots:
     void removeSkillFromDialog();
     void displayCharacter();
     void onSkillChanged(qint32 skillIndex=0);
-    void onPerkChanged(qint32 skillIndex, qint32 perkIndex);
+    void onPerkChanged(qint32 skillIndex=0, qint32 perkIndex=0);
 
     void writeSheet();
     void checkChange();

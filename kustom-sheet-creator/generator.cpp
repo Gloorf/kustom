@@ -92,6 +92,8 @@ void CGenerator::createPersonalBox()
 
 void CGenerator::createCaracBox()
 {
+    _mapper_attribute = new QSignalMapper;
+    connect(_mapper_attribute, SIGNAL(mapped(int)), this, SLOT(onAttributeChanged(int)));
     _attributeGrid = new QGridLayout;
     _attributeBox = new QGroupBox("Caractéristiques");
     _attributeGrid->addWidget(new QLabel(tr("Personnage")),0, 1);
@@ -109,7 +111,8 @@ void CGenerator::createCaracBox()
         _attributeGrid->addWidget(new QLabel(d->getCaracName()[i]), i + 1, 0);
         _attributeGrid->addWidget(_attributeI[i], i + 1, 1);
         _attributeGrid->addWidget(_attributeB[i], i + 1, 2);
-        connect(_attributeI[i], SIGNAL(valueChanged(int)), this, SLOT(onAttributeChanged()));
+        _mapper_attribute->setMapping(_attributeI[i], i);
+        connect(_attributeI[i], SIGNAL(valueChanged(int)), _mapper_attribute, SLOT(map()));
     }
     _attributeBox->setLayout(_attributeGrid);
 }
@@ -160,15 +163,10 @@ void CGenerator::createGeneratorLayout()
     _generatorLayout->addWidget(_buttonBox);
 }
 
-void CGenerator::onAttributeChanged()
+void CGenerator::onAttributeChanged(qint32 index)
 {
-        _c->setAttribute("health", _attributeI[0]->value());
-        _c->setAttribute("strength", _attributeI[1]->value());
-        _c->setAttribute("agility", _attributeI[2]->value());
-        _c->setAttribute("reflexe", _attributeI[3]->value());
-        _c->setAttribute("willpower", _attributeI[4]->value());
-        _c->setAttribute("mana", _attributeI[5]->value());
-        updatePointValue();
+    _c->setAttributeById(index, _attributeI[index]->value());
+    updatePointValue();
 }
 
 void CGenerator::onRaceChanged()
@@ -597,7 +595,7 @@ void CGenerator::resetSheet()
     _raceI->setCurrentIndex(0);
     onRaceChanged();
     onNameChanged();
-    onAttributeChanged();
+    //onAttributeChanged();
     updateSkillGUI();
     updatePointValue();
 }

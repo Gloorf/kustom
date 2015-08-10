@@ -42,6 +42,7 @@ public:
     void removeSkillFromIndex(qint32 skillIndex);
     void updateSkillFromIndex(qint32 skillIndex, QString newId);
     void setAttribute(QString name, qint32 value);
+    void setAttributeById(qint32 index, qint32 value);
     qint32 getAttribute(QString name);
 
     void setName(QString name);
@@ -59,6 +60,8 @@ public:
     void updatePerkFromIndex(qint32 skillIndex, qint32 perkIndex, QString newId);
     QString getRaceName();
     void updatePointsTotal(bool verbose=false);
+
+    void randomise();
 private:
     CData *_d;
     QList<CUSkill *> _skills;

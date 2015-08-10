@@ -2,4 +2,4 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     kustom-sheet-creator
-CONFIG += ordered
+CONFIG += ordered c++11

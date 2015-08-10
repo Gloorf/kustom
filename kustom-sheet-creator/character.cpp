@@ -150,6 +150,12 @@ void CCharacter::setAttribute(QString name, qint32 value)
     _attributes.insert(name, value);
 }
 
+void CCharacter::setAttributeById(qint32 index, qint32 value)
+{
+    QStringList attributeName;
+    attributeName << "health" << "strength"<< "agility"<< "reflexe"<< "willpower" << "mana";
+    _attributes.insert(attributeName[index], value);
+}
 
 qint32 CCharacter::getAttribute(QString name)
 {
@@ -279,10 +285,12 @@ void CCharacter::updatePointsTotal(bool verbose)
         skillCost += _d->getSkillCost(_skills[i]->getParam("speed"), _skills[i]->getParam("level").toInt());
         skillCost += specialCost.value(_skills[i]->getParam("special"));
     }
+
     value += skillCost;
     value -= raceGiftPoints(verbose);
     //TODO : gift
     _points = value;
+
 }
 
 void CCharacter::updateRaceSkillSpeed(qint32 skillIndex)

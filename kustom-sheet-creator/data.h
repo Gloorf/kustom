@@ -25,7 +25,6 @@ along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 
 #include "xml_reader.h"
 #include "data_type.h"
-
 class CData : public QObject
 {
     Q_OBJECT
