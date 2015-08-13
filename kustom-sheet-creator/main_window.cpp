@@ -28,10 +28,21 @@ CMainWindow::CMainWindow()
 {
 
     tabWidget = new QTabWidget;
+    generatorTab = new QTabWidget;
     data = new CData;
-    generator = new CGenerator(data)    ;
+    generator = new CGenerator(data);
+    generatorTab->addTab(generator, tr("Fiche 1"));
+    generatorTab->addTab(new QWidget, "+");
+    generatorTab->setTabsClosable(true);
+    //Remove the close button for the "+" tab
+    generatorTab->tabBar()->setTabButton(1, QTabBar::RightSide, 0);
+    generatorTab->tabBar()->setTabButton(1, QTabBar::LeftSide, 0);
+
     simulator = new CSimulator;
     damageCalculator = new CDamageCalculator(data);
+    connect(generatorTab, SIGNAL(currentChanged(int)), this, SLOT(onGeneratorTabChange(int)));
+    connect(generatorTab, SIGNAL(tabCloseRequested(int)), this, SLOT(onGeneratorTabClose(int)));
+
     bool scrollBar=data->getSettings()->value("scrollBar").value<bool>();
     if(scrollBar)
     {
@@ -44,7 +55,7 @@ CMainWindow::CMainWindow()
     }
     else
     {
-        tabWidget->addTab(generator, tr("Générateur de fiche"));
+        tabWidget->addTab(generatorTab, tr("Générateur de fiche"));
         tabWidget->addTab(simulator, tr("Simulateur de dés"));
         tabWidget->addTab(damageCalculator, tr("Calculateur de dégâts"));
     }
@@ -58,6 +69,29 @@ CMainWindow::CMainWindow()
 }
 CMainWindow::~CMainWindow()
 {
+}
+void CMainWindow::onGeneratorTabChange(int index)
+{
+    if (generatorTab->tabText(index)=="+")
+        generatorTab->insertTab(index, new CGenerator(data), ("Fiche " + QString::number(index+1)));
+        generatorTab->setCurrentIndex(index);
+}
+
+void CMainWindow::onGeneratorTabClose(int index)
+{
+    if (index == 0 || index + 1 == generatorTab->count()) {
+        return;
+    }
+    if (index == generatorTab->currentIndex())
+        generatorTab->setCurrentIndex(index-1);
+    generatorTab->currentWidget()->deleteLater();
+    generatorTab->removeTab(index);
+    //We just don't update the last tab ("+")
+    for (int i=0;i<generatorTab->count()-1;i++)
+    {
+        QString title = "Fiche " + QString::number(i+1);
+        generatorTab->setTabText(i, title);
+    }
 }
 
 void CMainWindow::resetGenerator()
