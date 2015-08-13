@@ -61,7 +61,7 @@ public:
     QString getRaceName();
     void updatePointsTotal(bool verbose=false);
 
-    qint32 randomise();
+    void randomise();
 private:
     CData *_d;
     QList<CUSkill *> _skills;

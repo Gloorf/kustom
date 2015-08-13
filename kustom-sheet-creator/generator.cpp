@@ -37,9 +37,17 @@ CGenerator::CGenerator(CData *data)
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(checkChange()));
     timer->start(10);
-    updateGUI(_c->randomise());
+    _c->randomise();
+    updateGUI();
 
 }
+
+void CGenerator::setCharacter(CCharacter *c)
+{
+    _c=c;
+    updateGUI();
+}
+
 void CGenerator::createPersonalBox()
 {
     _personalGrid = new QGridLayout;
@@ -66,7 +74,7 @@ void CGenerator::createPersonalBox()
     _buttonFont = new QPushButton("Changer la police");
     for (int i=0; i<d->getRaceB().size();++i)
     {
-        _raceI->addItem(d->getRaceB()[i]->getName());
+        _raceI->addItem(d->getRaceB()[i]->getName(), d->getRaceB()[i]->getId());
     }
     connect(_raceI, SIGNAL(currentIndexChanged(int)), this, SLOT(onRaceChanged()));
     connect(_charName, SIGNAL(textChanged(QString)), this ,SLOT(onNameChanged()));
@@ -165,12 +173,12 @@ void CGenerator::createGeneratorLayout()
     _generatorLayout->addWidget(_buttonBox);
 }
 
-void CGenerator::updateGUI(qint32 index_race)
+void CGenerator::updateGUI()
 {
     updateCharacterAttribute();
     updateBaseAttribute();
     updateSkillGUI();
-    updatePersonal(index_race);
+    updatePersonal();
     updatePointValue();
 }
 
@@ -210,12 +218,12 @@ void CGenerator::updateBaseAttribute()
     _attributeB[5]->setValue( d->getRaceById(_c->getRaceId())->getAttribute("mana"));
 }
 
-void CGenerator::updatePersonal(qint32 index_race)
+void CGenerator::updatePersonal()
 {
     _charName->setText(_c->getName());
     _advantageValue->setValue(_c->getAdvantagePoints());
     _religionValue->setValue(_c->getReligionPoints());
-    _raceI->setCurrentIndex(index_race);
+    _raceI->setCurrentIndex(_raceI->findData(_c->getRaceId()));
 }
 
 void CGenerator::onNameChanged()

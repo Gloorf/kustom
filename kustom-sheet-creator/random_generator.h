@@ -34,6 +34,8 @@ private:
     QPushButton *_buttonGenerate;
 private slots:
     void onActionGenerateSheet();
+signals:
+    void generateSheet(CCharacter *character);
 };
 
 #endif // RANDOM_GENERATOR_H

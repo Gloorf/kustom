@@ -103,6 +103,7 @@ public:
     CGenerator(CData *data);
     CData *d;
     CCharacter *getCharacter();
+    void setCharacter(CCharacter *c);
 private:
     CCharacter *_c;
     CDialogAddSkill *_dialogAddSkill;
@@ -115,12 +116,12 @@ private:
     void createSkillBox();
     void createGeneratorLayout();
     //Based solely on the character data
-    void updateGUI(qint32 index_race);
+    void updateGUI();
     void updateSkillGUI();
     void checkSkillPrerequisite(bool verbose);
     void updateCharacterAttribute();
     void updateBaseAttribute();
-    void updatePersonal(qint32 index_race);
+    void updatePersonal();
     QVBoxLayout *_generatorLayout;
     QHBoxLayout *_topLayout;//For personal + carac boxes
     QGridLayout *_personalGrid;

@@ -40,7 +40,7 @@ qint32 CCharacter::randInt(qint32 low, qint32 high)
 {
     return qrand() % ((high + 1) - low) + low;
 }
-qint32 CCharacter::randomise()
+void CCharacter::randomise()
 {
     qint32 rdm_id = randInt(0, _d->getRaceB().size() -1);
     updateRace(_d->getFullId("race", rdm_id));
@@ -58,7 +58,6 @@ qint32 CCharacter::randomise()
     spec << "n" << "t" << "g";
     setSkillParam(0, "special", spec[randInt(0,2)]);
     updatePerkNumber(0, getPerkNumberForSkill(0));
-    return rdm_id;
 }
 
 void CCharacter::updateRace(QString id)
