@@ -27,7 +27,14 @@ CRandomGenerator::CRandomGenerator(CData *data) : _d(data)
     setLayout(_layout);
 }
 
+CCharacter* CRandomGenerator::randomCharacter()
+{
+    CCharacter *c = new CCharacter(_d);
+    c->randomise();
+    return c;
+}
+
 void CRandomGenerator::onActionGenerateSheet()
 {
-    qDebug() << "pressed";
+    emit generateSheet(randomCharacter());
 }

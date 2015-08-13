@@ -54,6 +54,7 @@ private:
 private slots:
     void onGeneratorTabChange(int index);
     void onGeneratorTabClose(int index);
+    void onRandomSheetGenerated(CCharacter *character);
 };
 
 

@@ -37,9 +37,6 @@ CGenerator::CGenerator(CData *data)
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(checkChange()));
     timer->start(10);
-    _c->randomise();
-    updateGUI();
-
 }
 
 void CGenerator::setCharacter(CCharacter *c)

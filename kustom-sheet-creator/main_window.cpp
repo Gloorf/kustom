@@ -43,6 +43,7 @@ CMainWindow::CMainWindow()
     randomGenerator = new CRandomGenerator(data);
     connect(generatorTab, SIGNAL(currentChanged(int)), this, SLOT(onGeneratorTabChange(int)));
     connect(generatorTab, SIGNAL(tabCloseRequested(int)), this, SLOT(onGeneratorTabClose(int)));
+    connect(randomGenerator, SIGNAL(generateSheet(CCharacter*)), this, SLOT(onRandomSheetGenerated(CCharacter*)));
     bool scrollBar=data->getSettings()->value("scrollBar").value<bool>();
     if(scrollBar)
     {
@@ -78,6 +79,17 @@ void CMainWindow::onGeneratorTabChange(int index)
     if (generatorTab->tabText(index)=="+")
         generatorTab->insertTab(index, new CGenerator(data), ("Fiche " + QString::number(index+1)));
         generatorTab->setCurrentIndex(index);
+}
+
+void CMainWindow::onRandomSheetGenerated(CCharacter *character)
+{
+    qint32 index = generatorTab->count() -1;
+    CGenerator *tmp = new CGenerator(data);
+    tmp->setCharacter(character);
+    generatorTab->insertTab(index, tmp, "Fiche " + QString::number(index + 1));
+    generatorTab->setCurrentIndex(index);
+    //Remember to switch the global tabwidget to the generator (currently 0)
+    tabWidget->setCurrentIndex(0);
 }
 
 void CMainWindow::onGeneratorTabClose(int index)

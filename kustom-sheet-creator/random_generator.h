@@ -32,6 +32,7 @@ private:
     CData *_d;
     QGridLayout *_layout;
     QPushButton *_buttonGenerate;
+    CCharacter* randomCharacter();
 private slots:
     void onActionGenerateSheet();
 signals:
