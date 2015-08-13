@@ -25,6 +25,7 @@ along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 #include "simulator.h"
 #include "damage_calculator.h"
 #include "data.h"
+#include "random_generator.h"
 class CMainWindow : public QMainWindow
 {
 Q_OBJECT
@@ -43,11 +44,12 @@ private:
     CGenerator *generator;
     CSimulator *simulator;
     CDamageCalculator *damageCalculator;
+    CRandomGenerator *randomGenerator;
     CVerticalScrollArea *generatorScroll;
     CVerticalScrollArea *simulatorScroll;
     CVerticalScrollArea *damageCalculatorScroll;
+    CVerticalScrollArea *randomGeneratorScroll;
     void closeEvent( QCloseEvent *evt);
-    void resetGenerator();
 };
 
 

@@ -9,7 +9,8 @@ SOURCES += \
     dialog.cpp \
     character.cpp \
     xml_reader.cpp \
-    data_type.cpp
+    data_type.cpp \
+    random_generator.cpp
 
 HEADERS += \
     main_window.h \
@@ -21,7 +22,8 @@ HEADERS += \
     dialog.h \
     character.h \
     xml_reader.h \
-    data_type.h
+    data_type.h \
+    random_generator.h
 
 OTHER_FILES += \
     kustom-sheet-creator.pri \

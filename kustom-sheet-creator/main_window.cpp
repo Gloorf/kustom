@@ -24,29 +24,34 @@ along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 #include "generator.h"
 #include "simulator.h"
 #include "damage_calculator.h"
+#include "random_generator.h"
 CMainWindow::CMainWindow()
 {
 
     tabWidget = new QTabWidget;
     data = new CData;
-    generator = new CGenerator(data)    ;
+    generator = new CGenerator(data);
     simulator = new CSimulator;
     damageCalculator = new CDamageCalculator(data);
-    bool scrollBar=data->getSettings()->value("scrollBar").value<bool>();
+    randomGenerator = new CRandomGenerator(data);
+    bool scrollBar = data->getSettings()->value("scrollBar").value<bool>();
     if(scrollBar)
     {
         generatorScroll=new CVerticalScrollArea(generator);
         simulatorScroll = new CVerticalScrollArea(simulator);
         damageCalculatorScroll = new CVerticalScrollArea(damageCalculator);
+        randomGeneratorScroll = new CVerticalScrollArea(randomGenerator);
         tabWidget->addTab(generatorScroll, tr("Générateur de fiche"));
         tabWidget->addTab(simulatorScroll, tr("Simulateur de dés"));
         tabWidget->addTab(damageCalculatorScroll, tr("Calculateur de dégâts"));
+        tabWidget->addTab(randomGeneratorScroll, tr("Générateur de fiches aléatoires"));
     }
     else
     {
         tabWidget->addTab(generator, tr("Générateur de fiche"));
         tabWidget->addTab(simulator, tr("Simulateur de dés"));
         tabWidget->addTab(damageCalculator, tr("Calculateur de dégâts"));
+        tabWidget->addTab(randomGenerator, tr("Générateur de fiches aléatoires"));
     }
     //We do this to have a little margin to the left & right (prettier)
     QVBoxLayout *mainLayout = new QVBoxLayout;
@@ -57,10 +62,6 @@ CMainWindow::CMainWindow()
     setWindowTitle("Outils pour Kustom");
 }
 CMainWindow::~CMainWindow()
-{
-}
-
-void CMainWindow::resetGenerator()
 {
 }
 
