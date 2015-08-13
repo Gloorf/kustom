@@ -42,6 +42,7 @@ private:
     QVBoxLayout *mainLayout;
     CData *data;
     CGenerator *generator;
+    QTabWidget *generatorTab;
     CSimulator *simulator;
     CDamageCalculator *damageCalculator;
     CRandomGenerator *randomGenerator;
@@ -50,6 +51,9 @@ private:
     CVerticalScrollArea *damageCalculatorScroll;
     CVerticalScrollArea *randomGeneratorScroll;
     void closeEvent( QCloseEvent *evt);
+private slots:
+    void onGeneratorTabChange(int index);
+    void onGeneratorTabClose(int index);
 };
 
 
