@@ -10,7 +10,9 @@ SOURCES += \
     character.cpp \
     xml_reader.cpp \
     data_type.cpp \
-    random_generator.cpp
+    random_generator.cpp \
+    random.cpp \
+    util.cpp
 
 HEADERS += \
     main_window.h \
@@ -23,7 +25,9 @@ HEADERS += \
     character.h \
     xml_reader.h \
     data_type.h \
-    random_generator.h
+    random_generator.h \
+    random.h \
+    util.h
 
 OTHER_FILES += \
     kustom-sheet-creator.pri \
@@ -31,3 +35,4 @@ OTHER_FILES += \
 
 RC_FILE= kustomsheetcreator.rc
 QT += core gui widgets
+CONFIG += c++11

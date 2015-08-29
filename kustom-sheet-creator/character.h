@@ -81,7 +81,6 @@ private:
      * */
     void updateRaceSkillSpeed(qint32 skillIndex);
     qint32 raceGiftPoints(bool verbose);
-    qint32 randInt(qint32 low, qint32 high);//Temp, should put it in a util or something
 };
 
 

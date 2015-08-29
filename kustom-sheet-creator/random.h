@@ -16,39 +16,19 @@ You should have received a copy of the GNU General Public License
 along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 */
 
-#ifndef RANDOM_GENERATOR_H
-#define RANDOM_GENERATOR_H
-
-#include <QtWidgets>
+#ifndef RANDOM_H
+#define RANDOM_H
 #include "data.h"
-#include "generator.h"
-#include "random.h"
-class CRandomGenerator : public QWidget
-{
-    Q_OBJECT
 
+class CRandom
+{
 public:
-    CRandomGenerator(CData *data);
+    CRandom(CData *data);
+    CRace* randomRace();
+    CSkill* randomSkill(qint32 min_lvl = 1, qint32 max_lvl = 10);
 private:
     CData *_d;
-    CRandom *_r;
-    QGridLayout *_layout;
-    QPushButton *_buttonGenerate;
-    QSpinBox *_attributePoints;
-    QSpinBox *_skillPoints;
-    QSpinBox *_minLevel;
-    QSpinBox *_maxLevel;
-    QCheckBox *_randomRace;
-    QCheckBox *_useWeapon;
-    QCheckBox *_useMagic;
-    QCheckBox *_useMisc;
-
-    CCharacter* randomCharacter(qint32 attributePoints, qint32 skillPoints, qint32 min_lvl, qint32 max_lvl, bool race, bool weapon, bool magic, bool misc);
-private slots:
-    void onActionGenerateSheet();
-signals:
-    void generateSheet(CCharacter *character);
 };
 
-#endif // RANDOM_GENERATOR_H
+#endif // RANDOM_H
 

@@ -35,7 +35,6 @@ private:
         qint32 bonus;//+C
     };
     qint32 diceRoll(diceData dice);
-    qint32 randInt(qint32 low, qint32 high);
     void createDiceBox();
     void createProbabilityBox();
     void createSimulatorLayout();

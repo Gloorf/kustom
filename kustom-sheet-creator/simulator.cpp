@@ -25,6 +25,7 @@ along with Kustom Sheet Creator.  If not, see <http://www.gnu.org/licenses/>
 #include "generator.h"
 #include "simulator.h"
 #include "signal.h"
+#include "util.h"
 CSimulator::CSimulator()
 {
     //Initialisation of random seed to have different values for qrand()
@@ -49,17 +50,11 @@ qint32 CSimulator::diceRoll(diceData dice)
     //If AdB+C We add A times a rand(1,B) and finally add C
     for(int j=0;j<dice.roll;j++)
     {
-        result = result + randInt(1, dice.value);
+        result = result + Util::randInt(1, dice.value);
     }
     result = result + dice.bonus;
     return result;
 }
-
-qint32 CSimulator::randInt(qint32 low, qint32 high)
-{
-    return qrand() % ((high + 1) - low) + low;
-}
-
 void CSimulator::createDiceBox()
 {
     diceBox = new QGroupBox(tr("Lanceur de dés"));
