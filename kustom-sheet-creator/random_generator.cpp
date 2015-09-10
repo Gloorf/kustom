@@ -56,12 +56,12 @@ CRandomGenerator::CRandomGenerator(CData *data) : _d(data)
 
     _buttonGenerate = new QPushButton("Générer une fiche aléatoire");
     connect(_buttonGenerate, SIGNAL(clicked()), this, SLOT(onActionGenerateSheet()));
-    _layout->addWidget(_buttonGenerate, 8, 0, -1, -1);
     //Little hack to make everything not stretched (it's ugly)
     QGroupBox *tmpBox = new QGroupBox;
     tmpBox->setLayout(_layout);
     QVBoxLayout *tmpLayout = new QVBoxLayout;
     tmpLayout->addWidget(tmpBox, 0, Qt::AlignTop);
+    tmpLayout->addWidget(_buttonGenerate, 1, Qt::AlignTop);
     setLayout(tmpLayout);
 }
 
