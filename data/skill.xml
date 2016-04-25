@@ -7749,7 +7749,7 @@
 				<desc>Permet de donner une injonction à un mort-vivant, si le cast x 2 dépasse ses points de vie. Coûte 5 mana.</desc>
 				<misc/>
 				<cooldown>4</cooldown>
-				<dd>Dépend.</dd>
+				<dd>Dépen</dd>
 				<slowIncant>true</slowIncant>
 				<fastIncant>false</fastIncant>
 				<focus>false</focus>
@@ -9859,7 +9859,7 @@
 				<desc>Peut invoquer un des destriers au choix :Cheval fabuleux : DD 14, 3 m/t.Triple-ailes : DD 22, 7 + 4 m/t.Bison fabuleux : DD 19, 12 + 3m/t. Coûte Var mana.</desc>
 				<misc/>
 				<cooldown>4</cooldown>
-				<dd>Dépend.</dd>
+				<dd>Dépen</dd>
 				<slowIncant>false</slowIncant>
 				<fastIncant>false</fastIncant>
 				<focus>false</focus>
