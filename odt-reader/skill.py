@@ -86,7 +86,6 @@ class Skill(object):
         if self.id == '020024' or self.id == '020022' or self.id == '020017' or self.id == '020019':#Psychique/Ele/moniale/occultisme
             return True
         return False
-    def __eq__(self):
 
 def find_skill_by_name(skills, name):
     for index,skill in enumerate(skills):
