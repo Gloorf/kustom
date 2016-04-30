@@ -118,7 +118,7 @@ private:
     //Based solely on the character data
     void updateGUI();
     void updateSkillGUI();
-    void checkSkillPrerequisite(bool verbose);
+    bool checkSkillPrerequisite(bool verbose);
     void updateCharacterAttribute();
     void updateBaseAttribute();
     void updatePersonal();
