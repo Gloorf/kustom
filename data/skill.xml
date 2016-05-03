@@ -7749,7 +7749,7 @@
 				<desc>Permet de donner une injonction à un mort-vivant, si le cast x 2 dépasse ses points de vie. Coûte 5 mana.</desc>
 				<misc/>
 				<cooldown>4</cooldown>
-				<dd>Dépen</dd>
+				<dd>Dépen.</dd>
 				<slowIncant>true</slowIncant>
 				<fastIncant>false</fastIncant>
 				<focus>false</focus>
@@ -9599,7 +9599,7 @@
 				<desc>Crée une vague de 4 mètres de haut et de long. Elle se déplace de école x 3 mètres par round et produit des attaques de poussées avec comme bonus volonté et école. Jet de concentration requis. Coûte 10 mana + 5 mana/tour.</desc>
 				<misc/>
 				<cooldown>5</cooldown>
-				<dd>24 + 2/t</dd>
+				<dd>24 + </dd>
 				<slowIncant>true</slowIncant>
 				<fastIncant>false</fastIncant>
 				<focus>false</focus>
@@ -9859,7 +9859,7 @@
 				<desc>Peut invoquer un des destriers au choix :Cheval fabuleux : DD 14, 3 m/t.Triple-ailes : DD 22, 7 + 4 m/t.Bison fabuleux : DD 19, 12 + 3m/t. Coûte Var mana.</desc>
 				<misc/>
 				<cooldown>4</cooldown>
-				<dd>Dépen</dd>
+				<dd>Dépend.</dd>
 				<slowIncant>false</slowIncant>
 				<fastIncant>false</fastIncant>
 				<focus>false</focus>
