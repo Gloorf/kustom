@@ -272,9 +272,13 @@ void CGenerator::removeSkillDialog()
 
 void CGenerator::writeSheet()
 {
-    //bool strictCheck=d->getSettings()->value("strictCheck").value<bool>();
+    bool strictCheck=d->getSettings()->value("naziCheck").value<bool>();
     _c->updatePointsTotal(true);
-    checkSkillPrerequisite(true);
+    if (!checkSkillPrerequisite(true) && strictCheck) {
+        QMessageBox::critical(this, "Impossible de créer la fiche",
+        "Le mode nazi est activé, je refuse de créer la fiche.");
+        return;
+    }
     for(int i=0;i<_c->getSkill().size();i++)
     {
         CUSkill *skill = _c->getSkill()[i];
@@ -293,9 +297,10 @@ void CGenerator::writeSheet()
     _writer = new COdtWriter(_c, _usedFont, d);
 }
 
-void CGenerator::checkSkillPrerequisite(bool verbose)
+bool CGenerator::checkSkillPrerequisite(bool verbose)
 {
     QStringList userSkillName;
+    bool output = true;
     for(int i=0;i<_c->getSkill().size();i++)
     {
         CUSkill *skill = _c->getSkill()[i];
@@ -305,6 +310,8 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
         {
             QMessageBox::warning(this, "Nombre de perk incohérent",
             "Vous avez au moins une perk en trop dans la compétence "+skill->getParam("name"));
+            output = false;
+
         }
         for(int j=0;j<skill->getPerkB().size();j++)
         {
@@ -317,6 +324,7 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
                 _skillI[i]->perkList[j]->setToolTip(toolTip);
                 QString redStyle="QComboBox {border:1px solid red}";
                 _skillI[i]->perkList[j]->setStyleSheet(redStyle);
+                output = false;
             }
             else
             {
@@ -350,6 +358,7 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
                 }
                 if(!ok)
                 {
+                    output = false;
                     QString perkNeededName = d->getPerkById(needed[0])->getParamStr("name");
                     QString tmpWarning = "il vous manque la perk ";
                     tmpWarning = tmpWarning + perkNeededName + " qui est nécessaire pour la perk ";
@@ -387,6 +396,7 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
                 }
                 if(!ok)
                 {
+                    output = false;
                     QString tmpWarning = "il vous manque la compétence ";
                     if(needed.size() >1)
                     {
@@ -423,6 +433,7 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
         //Duplicate perk
         if(perkName.removeDuplicates()!=0 && !skill->isMisc())
         {
+            output = false;
             if(verbose)
             {
                 QMessageBox::warning(this, "Perk(s) schizophrène(s)",
@@ -430,6 +441,7 @@ void CGenerator::checkSkillPrerequisite(bool verbose)
             }
         }
     }
+    return output;
 }
 /*
  * */

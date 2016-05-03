@@ -105,18 +105,19 @@ void COdtWriter::writeCharData()
 
     _cursor.movePosition(QTextCursor::Down);
     _cursor.insertText("Force : " + QString::number(_c->getAttribute("strength")), _italic);
-
+    int strBonus = _c->getAttribute("strength")/4;
     if(_c->getAttribute("strengthReligion") > 0)
     {
         _cursor.insertText("(" + QString::number(_c->getAttribute("strength")+_c->getAttribute("strengthReligion") ) + ")", _italic);
+        strBonus += _c->getAttribute("strengthReligion")/4;
     }
-
+    _cursor.insertText(+ " (+" + QString::number(strBonus) + ")", _italic);
     _cursor.movePosition(QTextCursor::Down);
-    _cursor.insertText("Agilité : " + QString::number(_c->getAttribute("agility")), _italic);
+    _cursor.insertText("Agilité : " + QString::number(_c->getAttribute("agility")) + " (+" + QString::number(_c->getAttribute("agility")/3) + ")", _italic);
     _cursor.movePosition(QTextCursor::Down);
-    _cursor.insertText("Réflexes : " + QString::number(_c->getAttribute("reflexe")), _italic);
+    _cursor.insertText("Réflexes : " + QString::number(_c->getAttribute("reflexe")) + " (+" + QString::number(_c->getAttribute("reflexe")/3) + ")", _italic);
     _cursor.movePosition(QTextCursor::Down);
-    _cursor.insertText("Volonté : " + QString::number(_c->getAttribute("willpower")), _italic);
+    _cursor.insertText("Volonté : " + QString::number(_c->getAttribute("willpower")) + " (+" + QString::number(_c->getAttribute("willpower")/2) + ")", _italic);
     _cursor.movePosition(QTextCursor::Down);
     _cursor.insertText("Mana : " + QString::number(_c->getAttribute("mana")), _italic);
     _cursor.movePosition(QTextCursor::NextCell);
